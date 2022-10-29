@@ -1,0 +1,160 @@
+
+  
+.menu .link {
+    padding: 10px;
+    color: inherit;
+    text-decoration: none;
+  }
+  
+ 
+
+  .menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #7EB101;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .menu-toggle {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .mobile-menu {
+      display: none;
+    }
+  }
+
+  
+  .menu-toggle:hover,
+  .menu-toggle:focus {
+
+    fill:#2196F3;
+  }
+  
+  .menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 796px;
+    padding: 48px 0px 48px 40px;
+
+
+
+    background-color: #fff;
+    z-index: 999;
+  
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+  }
+  
+  .menu-container.is-open {
+    transform: translateX(0);
+  }
+  
+  .menu-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    // color: #fff;
+  }
+  
+  .mobile-menu {
+ 
+    padding-right: 10px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+    // @include font(40px, 500, 1.18);  
+
+    letter-spacing: 0.02em;
+    
+    color: #212121;
+
+
+  }
+  
+  .mobile-menu .link {
+    display: block;
+
+    color: #212121;
+    text-decoration: none;
+  }
+
+     .mobile-menu .current {
+       
+       color: #2196F3;
+       
+     }
+
+
+  .mobile-contacts,
+  .mobile-social{
+    
+    list-style: none;
+          
+  }
+
+  .mobile-contact__link{
+    text-decoration: none;
+    margin-top: 306px;
+    margin-bottom: 32px;
+  }
+
+  .mobile-contacts-link__email{
+    margin-bottom: 64px;
+  }
+
+.mobile-contact__tel
+{
+//   @include font(34px, 500, 1.18);  
+  letter-spacing: 0.02em;
+  color: #2196F3;
+  
+}
+
+.mobile-contact__email
+{
+//   @include font(24px, 500, 1.17); 
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mobile-social__link
+{
+  text-decoration: none;
+//   @include font(18px, 500, 1.22); 
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
+.mobile-social{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+
+.mobile-social_list:not(:last-child){
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  margin-right: 10px;
+
+}
+.mobile-social__line{
+margin-left: 10px;
+}
+  
