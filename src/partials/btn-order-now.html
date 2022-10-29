@@ -12,21 +12,20 @@
                     </button>
                     <h2 class="order__title">Order Form</h2>
                     <form class="order__form">
-                        <label> Name
-                            <input type="text" name="Name" placeholder="Your name">
+                        <label class="order__form-set"> Name
+                            <input class="order__input" type="text" name="Name" placeholder="Your name" required autofocus>
                         </label>
-                        <label> Phone number
-                            <input type="tel" name="Phone number" placeholder="+38(0_ _) _ _ _   _ _   _ _">
+                        <label class="order__form-set"> Phone number
+                            <input class="order__input" type="tel" name="Phone_number" placeholder="+38(0_ _) _ _ _   _ _   _ _" required>
                         </label>
-                        <label> E-mail
-                            <input type="email" name="E-mail" placeholder="example@gmail.com">
+                        <label class="order__form-set"> E-mail
+                            <input class="order__input" type="email" name="E-mail" placeholder="example@gmail.com" required>
                         </label>
-                        <button class="order__btn-send">Send</button>
+                        <button type="submit" class="order__btn-send">Send</button>
                     </form>
                 </div>
             </div>
 
-            
         </div>
     </hero>
 </main>

@@ -1,4 +1,7 @@
 
+h2 {
+    margin: 0;
+}
 
 .container {
     margin-top: 50px;
@@ -78,12 +81,14 @@
             transform: scale(1) translate(-50%, -50%);
             width: 320px;
             height: 449px;
+            padding: 32px 20px;
             background-color: rgba(255, 229, 80, 1);
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
             border-radius: 30px;
 
                 @media screen and (min-width: 768px) {
                     width: 458px;
+                    padding: 32px 32px;
                 }
 
                 @media screen and (max-height: 448px) and (orientation: landscape) {
@@ -111,4 +116,35 @@
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
 
     }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__form {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__form-set {
+        display: flex;
+        flex-direction: column;
+        margin-top: 24px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+    }
+
+    &__input {
+        padding-left: 12px;
+        margin-top: 2px;
+        height: 48px;
+    }
+
+    &__btn-send {
+        margin-top: 32px;
+    }
+    
 }
