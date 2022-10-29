@@ -1,7 +1,7 @@
 <main>
-    <hero>
-        <div class="container">
-            <div class="order">
+    <div class="container">
+        <div class="order">
+            <div>
                 <button class="order__button" type="button" data-menu-open>Order Now</button>
             </div>
 
@@ -12,13 +12,16 @@
                     </button>
                     <h2 class="order__title">Order Form</h2>
                     <form class="order__form">
-                        <label class="order__form-set"> Name
+                        <label class="order__form-set"> 
+                            <p class="order__form-name">Name</p>
                             <input class="order__input" type="text" name="Name" placeholder="Your name" required autofocus>
                         </label>
-                        <label class="order__form-set"> Phone number
+                        <label class="order__form-set">
+                            <p class="order__form-name">Phone number</p> 
                             <input class="order__input" type="tel" name="Phone_number" placeholder="+38(0_ _) _ _ _   _ _   _ _" required>
                         </label>
-                        <label class="order__form-set"> E-mail
+                        <label class="order__form-set">
+                            <p class="order__form-name">E-mail</p> 
                             <input class="order__input" type="email" name="E-mail" placeholder="example@gmail.com" required>
                         </label>
                         <button type="submit" class="order__btn-send">Send</button>
@@ -27,5 +30,5 @@
             </div>
 
         </div>
-    </hero>
+    </div>
 </main>

@@ -3,6 +3,10 @@ h2 {
     margin: 0;
 }
 
+p {
+    margin: 0;
+}
+
 .container {
     margin-top: 50px;
     outline: solid rosybrown;
@@ -119,6 +123,10 @@ h2 {
 
     &__title {
         text-align: center;
+
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
     }
 
     &__form {
@@ -132,9 +140,17 @@ h2 {
         flex-direction: column;
         margin-top: 24px;
 
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+
             &:first-child {
                 margin-top: 0;
             }
+    }
+
+    &__form-name {
+        margin-left: 12px;
     }
 
     &__input {
@@ -144,10 +160,19 @@ h2 {
         border: 1px solid #7EB101;
         box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
         border-radius: 30px;
+
+            &::placeholder {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: rgba(196, 196, 196, 1);
+            }
     }
+
 
     &__btn-send {
         margin-top: 32px;
     }
     
 }
+
