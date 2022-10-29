@@ -31,10 +31,6 @@
 
 .order {
 
-    @media screen and (max-width: 767px) {
-        display: none;
-    }
-
     @media screen and (min-width: 768px) {
         margin-left: 30px;
     }
@@ -57,12 +53,7 @@
     }
 
     &__backdrop {
-        @media screen and (max-width: 767px) {
-            display: none;
-        }
-
-        @media screen and (min-width: 768px) {
-
+   
             position: fixed;
             z-index: 6;
             top: 0;
@@ -76,29 +67,36 @@
                 opacity: 0;
                 pointer-events: none;
             }
-
-
-        }
+     
     }
 
     &__modal {
-        @media screen and (min-width: 768px) {
             position: absolute;
             z-index: 7;
             top: 50%;
             left: 50%;
             transform: scale(1) translate(-50%, -50%);
-            width: 458px;
+            width: 320px;
             height: 449px;
             background-color: rgba(255, 229, 80, 1);
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
             border-radius: 30px;
-        }
+
+                @media screen and (min-width: 768px) {
+                    width: 458px;
+                }
+
+                @media screen and (max-height: 448px) and (orientation: landscape) {
+                    max-height: 95vh;
+                    overflow-y: scroll;
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                }
+
+        
     }
 
     &__btn-x {
-
-        @media screen and (min-width: 768px) {
 
             position: absolute;
             z-index: 8;
@@ -111,6 +109,6 @@
             border: none;
             background-color: rgba(255, 255, 255, 1);
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-        }
+
     }
 }
