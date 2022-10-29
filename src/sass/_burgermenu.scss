@@ -9,12 +9,12 @@
  
 
   .menu-toggle {
-    min-height: 40px;
-    min-width: 40px;
+    min-height: 24px;
+    min-width: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
-    fill: #7EB101;
+    fill: #2C2C2C;
     margin: 0;
     padding: 0;
     background-color: transparent;
@@ -43,19 +43,25 @@
   }
   
   .menu-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 796px;
-    padding: 48px 0px 48px 40px;
+       position: fixed;
+      // top: 0;
+      // left: 0;
+    width: 130px;
+    height: 255px;
+    padding-left: 16px;
+    padding-top: 16px;
 
-
+    
 
     background-color: #fff;
-    z-index: 999;
-  
+    z-index: 999;  
     transform: translateX(100%);
+    
+    box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+    border-radius: 30px 0px 30px 30px;
+
+
+
     transition: transform 250ms ease-in-out;
   }
   
@@ -65,8 +71,8 @@
   
   .menu-close {
     position: absolute;
-    top: 10px;
-    right: 15px;
+    top: 4px;
+    right: 4px;
     // color: #fff;
   }
   
@@ -77,9 +83,15 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    gap: 32px;   
+    padding-left: 0;
 
-    // @include font(40px, 500, 1.18);  
+    // @include font(40px, 500, 1.18); 
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    
+
 
     letter-spacing: 0.02em;
     
@@ -96,9 +108,14 @@
   }
 
      .mobile-menu .current {
-       
-       color: #2196F3;
-       
+       position: absolute;
+        width: 130px;
+        height: 51px;
+        background: #BBF330;
+        border-radius: 30px 0px 0px 0px;
+        z-index: -1;  
+        top: 0;
+        left: 0;
      }
 
 
