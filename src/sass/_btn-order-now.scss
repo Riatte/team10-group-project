@@ -141,6 +141,9 @@ h2 {
         padding-left: 12px;
         margin-top: 2px;
         height: 48px;
+        border: 1px solid #7EB101;
+        box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 30px;
     }
 
     &__btn-send {
