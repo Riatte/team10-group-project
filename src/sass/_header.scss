@@ -9,10 +9,6 @@ box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
             
         }
 
-
-
-
-
 }
 
 .menu-button {
@@ -60,8 +56,14 @@ box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
     }
 }
 
+//  @media screen and (max-width: 767px) {
+//     .header__nav {
+//          display: none;
+//      }
+//  }
+
  @media screen and (max-width: 767px) {
-    .header__nav {
+    .site-nav, .modal-button {
          display: none;
      }
  }

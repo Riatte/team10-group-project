@@ -6,7 +6,28 @@
       </svg>
     </a>
     <nav class="nav header__nav">
-      <button
+      <!-- Burger button -->
+
+      <button type="button" class="menu-toggle js-open-menu" 
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg
+          width="24"    
+          height="24"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path>
+          </svg>                   
+      </button>
+
+
+      <!-- <button
         type="button"
         class="menu-button"
         aria-expanded="false"
@@ -15,13 +36,17 @@
         <svg width="28" height="28" aria-label="Перемикач мобільного меню">
           <use class="icon-menu" href="./images/sprite.svg#open-menu"></use>
         </svg>
-      </button>
+      </button> -->
+
+
+
+
       <ul class="site-nav">
-        <button type="button" class="menu-button menu-button-close">
+        <!-- <button type="button" class="menu-button menu-button-close">
           <svg width="11" height="11" aria-label="Перемикач мобільного меню">
             <use class="icon-menu" href="./images/sprite.svg#close-menu"></use>
           </svg>
-        </button>
+        </button> -->
         <li class="site-nav__item">
           <a href="#home" class="site-nav__link site-nav__link-active">Home</a>
         </li>
