@@ -23,6 +23,11 @@
     border-radius: 50%;
     outline: none;
   }
+.menu-burger{
+  fill: #7EB101;
+}
+
+
   
   @media screen and (min-width: 768px) {
     .menu-toggle {
@@ -44,8 +49,9 @@
   
   .menu-container {
        position: fixed;
-      // top: 0;
+      top: 50px;
       // left: 0;
+      right: 0;
     width: 140px;
     height: 255px;
     padding-left: 16px;
