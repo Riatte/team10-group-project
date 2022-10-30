@@ -1,34 +1,31 @@
 <header class="header">
     <div class="container">
+    <a href="./index.html" class="logo">
+        <svg class="logo__icon" width="66" height="52">
+        <use href="./images/sprite.svg#icon-logo"></use>
+        </svg>
+    </a>
         <nav class="nav">
-            <a href="./index.html" class="logo">
-                <svg class="logo__icon" width="66" height="52">
-                    <use href="./images/sprite.svg#icon-logo"></use>
-                </svg>
-            </a>
-            <button type="button" 
-                    class="menu-button" 
-                    aria-expanded="false"
-                    aria-controls="menu-container">
+            <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container">
                 <svg width="28" height="28" aria-label="Перемикач мобільного меню">
-                <use class="icon-menu" href="./images/sprite.svg#open-menu"></use>
+                    <use class="icon-menu" href="./images/sprite.svg#open-menu"></use>
                 </svg>
             </button>
             <div class="menu-container" id="menu-container">
+            
                 <ul class="site-nav">
 
-            <button type="button" 
-                    class="menu-button menu-button-close">
-                <svg width="11" height="11" aria-label="Перемикач мобільного меню">
-                <use class="icon-menu" href="./images/sprite.svg#close-menu"></use>
-                </svg>
-            </button>
+                    <button type="button" class="menu-button menu-button-close">
+                        <svg width="11" height="11" aria-label="Перемикач мобільного меню">
+                            <use class="icon-menu" href="./images/sprite.svg#close-menu"></use>
+                        </svg>
+                    </button>
 
-                    <li class="site-nav__item"> <a href="#home" class="site-nav__link">Home</a></li>
-                    <li class="site-nav__item"> <a href="#about" class="site-nav__link">About</a></li>
-                    <li class="site-nav__item"> <a href="#service" class="site-nav__link">Service</a></li>
-                    <li class="site-nav__item"> <a href="#menu" class="site-nav__link">Menu</a></li>
-                    <li class="site-nav__item"> <a href="#contact" class="site-nav__link">Contact</a></li>
+                    <li class="site-nav__item"> <a href="#home" class="site-nav__link site-nav__link-active">Home</a></li>
+                    <li class="site-nav__item"> <a href="#offerings" class="site-nav__link">Offerings</a></li>
+                    <li class="site-nav__item"> <a href="#favorites" class="site-nav__link">Favorites</a></li>
+                    <li class="site-nav__item"> <a href="#customers" class="site-nav__link">Customers Say</a></li>
+                    <li class="site-nav__item"> <a href="#subscribe" class="site-nav__link">Subscribe</a></li>
                 </ul>
             </div>
             <button type="button" class="modal-button header__modal-button">Order Now</button>
