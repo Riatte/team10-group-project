@@ -44,8 +44,19 @@
         font-weight: 500;
         font-size: 13px;
         line-height: 1.5;
-    
 
+            &:active {
+                    background-color: rgba(181, 255, 0, 1);
+                }
+
+
+            &:focus, &:hover {
+
+                @media screen and (min-width: 768px) {
+                    background-color: rgba(181, 255, 0, 1);
+                }
+
+            }
 
     }
 
@@ -205,12 +216,24 @@
 }
 
 /*--------------------------------------- Offerings----------------------------------------------------------------*/
-.order__button-offerings {
+.order__button.order__button-offerings {
     width: 106px;
     height: 40px;
     background: rgba(255, 255, 255, 1);
     border: 2px solid rgba(126, 177, 1, 1);
     border-radius: 30px;
+
+         &:active {
+                    border: 2px solid rgba(89, 125, 0, 1);
+                }
+
+
+            &:focus, &:hover {
+
+                @media screen and (min-width: 768px) {
+                    border: 2px solid rgba(89, 125, 0, 1);
+                }
+            }
 
         @media screen and (max-width: 767px) {
             margin-top: 28px;
