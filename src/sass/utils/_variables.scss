@@ -1,9 +1,15 @@
-:root {
-	--text-color:  			 #2C2C2C;
-	--default-button-color:	 #BBF330;
-	--hover-button-color:  	 #7EB101;
-	--main-background-color: #F5F4FA;
-}
+//:root {
+//	--text-color:  			 #2C2C2C;
+//	--default-button-color:	 #BBF330;
+//	--hover-button-color:  	 #7EB101;
+//	--main-background-color: #F5F4FA;
+//  }
+
+  $text-color:             #2C2C2C;
+  $default-button-color:	 #BBF330;
+	$hover-button-color:  	 #7EB101;
+	$main-background-color:  #F5F4FA;
+
 
 * {
 	text-decoration: none;
