@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
     <link rel="stylesheet" href="./sass/index.scss" />
+
     <script type="module" src="./index.js"></script>
   </head>
   <body>
@@ -12,7 +13,6 @@
 
     <!-- Burgermenu -->
     <include src="./partials/burgermenu.html"></include>
-
     <include src="./partials/slider.html"></include>
 
     <script
@@ -25,7 +25,7 @@
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script defer src="./index.js"></script>
-    <script defer src="./slider.js"></script>
+    <script defer type="module" src="./slider.js"></script>
 
     <!-- ❗️❗️❗️ Add partials like so for every page -->
   </body>
