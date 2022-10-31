@@ -1,12 +1,42 @@
 .footer{
+    @media screen and (max-width: 767px){
+        
+            background-image: url(../images/footer-mob.jpeg);
+            background-position: bottom;
+            background-repeat: no-repeat;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1279px){
+        background-image: url(../images/footer-tab.jpeg);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        height: 506px;
+    }
+    @media screen and (min-width: 1280px){
     background-image: url(../images/footer.jpeg);
     background-position: bottom;
     background-repeat: no-repeat;
     height: 395px;
+}}
+.footer__wrap{
+    display: flex;
+    @media screen and (min-width: 768px) and (max-width: 1279px){
+        
+    }
 }
 
 .logo__contain{
-    @media screen and (min-width: 1200px){
+    @media screen and (max-width: 767px){
+        display: block;
+        flex-direction: column;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1279px){
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 100px;
+        flex-direction: column;
+    }
+   
+    @media screen and (min-width: 1280px){
     display: flex;
     padding-top: 100px;
     margin-bottom: 129px;
@@ -14,8 +44,48 @@
     
     
 }}
+.logo__link{
+    width: 66px;
+}
 .list{
-    @media screen and (min-width: 1200px){
+    @media screen and (max-width: 767px){
+        &__item{
+            font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2C2C2C;
+        }
+        &__link{
+            list-style: none;
+            margin-right: 28px;
+            padding-top: 18px;
+    
+            
+        }
+        
+    }
+    @media screen and (min-width: 768px) and (max-width: 1279px){
+    display: flex;
+
+    margin-left: 114px;
+    &__item{
+        font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+color: #2C2C2C;
+    }
+    &__link{
+        list-style: none;
+        margin-right: 28px;
+        padding-top: 18px;
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+  }
+
+    @media screen and (min-width: 1280px){
     display: flex;
     margin-left: 148px;
    
@@ -38,7 +108,105 @@ color: #2C2C2C;
 }}
 
 .footer__subscribe{
-    @media screen and (min-width: 1200px){
+    @media screen and (max-width: 767px){
+       
+        &--text{
+            margin-top: 40px;
+            margin-bottom: 12px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: #2C2C2C;
+        }
+        &--title{
+            font-size: 12px;
+    line-height: 14px;
+    color: #2C2C2C
+        }
+        &--item{
+            color: #7EB101;
+            text-decoration: underline;
+        }
+        &--btn{
+            width: 103px;
+    height: 42px;
+    background: #FFFFFF;
+    border: 0.854167px solid #7EB101;
+    border-radius: 30px;
+   margin-left: 13px;
+        }
+        &--input{
+            width: 279px;
+            height: 42px;
+            border: 0.854167px solid #FFE550;
+            border-radius: 30px;
+            margin-bottom: 12px;
+          
+            &::placeholder{
+                font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        color: #505050;
+        padding: 12px 12px 12px 12px;
+        
+        align-items: center;
+            }
+        }
+        
+    }
+    @media screen and (min-width: 768px) and (max-width: 1279px){
+        font-family: 'Roboto';
+        &--text{
+            margin-top: 40px;
+            margin-bottom: 12px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: #2C2C2C;
+        }
+        &--title{
+            font-size: 12px;
+    line-height: 14px;
+    color: #2C2C2C
+        }
+        &--item{
+            color: #7EB101;
+            text-decoration: underline;
+        }
+        &--btn{
+            width: 103px;
+    height: 42px;
+    background: #FFFFFF;
+    border: 0.854167px solid #7EB101;
+    border-radius: 30px;
+   margin-left: 13px;
+        }
+        &--input{
+            width: 279px;
+            height: 42px;
+            border: 0.854167px solid #FFE550;
+            border-radius: 30px;
+            margin-bottom: 12px;
+          
+            &::placeholder{
+                font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        color: #505050;
+        padding: 12px 12px 12px 12px;
+        
+        align-items: center;
+            }
+        }
+    }
+  
+    @media screen and (min-width: 1280px){
     font-family: 'Roboto';
     margin-left: 320px;
     &--text{
@@ -64,7 +232,7 @@ height: 42px;
 background: #FFFFFF;
 border: 0.854167px solid #7EB101;
 border-radius: 30px;
-margin-top: 33px;
+margin-left: 13px;
     }
     &--input{
         width: 279px;
@@ -88,7 +256,57 @@ margin-top: 33px;
  
 }}
 .footer__link{
-    @media screen and (min-width: 1200px){
+    @media screen and (max-width: 767px){
+      
+        &--item{
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            margin-right: 20px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+        &--title{
+            text-decoration-line: underline;
+            color: #7EB101;
+        }
+       &--coment{
+        font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #2C2C2C;
+       }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1279px){
+        display: flex;
+        justify-content: space-between;
+        margin-top: 100px;
+        &--text{
+            display: flex;
+            
+        }
+        &--item{
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            margin-right: 20px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+        &--title{
+            text-decoration-line: underline;
+            color: #7EB101;
+        }
+       &--coment{
+        font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #2C2C2C;
+       }
+    }
+    @media screen and (min-width: 1280px){
     display: flex;
     padding-bottom: 100px;
     justify-content: space-between;

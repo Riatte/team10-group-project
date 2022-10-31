@@ -47,12 +47,14 @@ img {
   width: 100%;
 }
 
+
 .container {
   margin: 0 auto;
   box-sizing: border-box;
   padding-left: 20px;
   padding-right: 20px;
   min-width: 320px;
+
 
   @media screen and (min-width: 480px) {
     min-width: 480px;
