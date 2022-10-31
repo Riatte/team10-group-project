@@ -1,0 +1,206 @@
+.subscribe-div2 h2 {
+    color: #2C2C2C;
+}
+
+.subscribe-div2 p {
+    color: #2C2C2C;
+
+}
+
+.subscribe-input {
+    background: #FEFEFE;
+    border: 0.854167px solid #FFE550;
+    border-radius: 30px;
+}
+
+.subscribe-input::placeholder {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: #505050;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.subscribe-btn {
+    background: #BBF330;
+    border-radius: 30px;
+    border: none;
+    height: 42px;
+    color: #2C2C2C;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+    background: #B5FF00;
+}
+
+.subscribe-div1 {
+
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 320px) {
+    .subscribe {
+        display: block;
+        align-items: center;
+        padding-bottom: 60px;
+    }
+
+    .subscribe-div2 p {
+        padding-bottom: 40px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.14;
+
+    }
+
+    .subscribe-div2 h2 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        padding-bottom: 20px;
+    }
+
+    .subscribe-input {
+        width: 280px;
+        margin-bottom: 20px;
+        height: 42px;
+        outline: none;
+        padding-left: 11px;
+    }
+
+    .subscribe-btn {
+        display: block;
+        margin-left: 177px;
+    }
+
+    .subscribe-div1 {
+        width: 280px;
+        height: 78px;
+        background-image: url(/src/images/banan3.png);
+        margin-bottom: 17px;
+        margin-left: auto;
+        margin-right: auto;
+        background-position: center center;
+    }
+
+
+
+}
+
+@media screen and (min-width: 768px) {
+    .subscribe {
+        display: block;
+        padding-bottom: 100px;
+    }
+
+    .subscribe-div2 h2 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 42px;
+        padding-bottom: 20px;
+    }
+
+    .subscribe-div2 p {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        padding-bottom: 24px;
+    }
+
+    .subscribe-form {
+        display: flex;
+    }
+
+    .subscribe-input {
+        width: 394px;
+        outline: none;
+        padding-left: 11px;
+    }
+
+    .subscribe-btn {
+        margin-left: 22px;
+    }
+
+    .subscribe-div1 {
+        width: 281px;
+        height: 136px;
+        background-image: url(/src/images/banan2.png);
+        margin-left: 423px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .subscribe {
+        display: flex;
+        padding-bottom: 100px;
+    }
+
+    .subscribe-div1 {
+        width: 608px;
+        height: 266px;
+        background-image: url(/src/images/banan.png);
+        margin-left: 639px;
+        position: absolute;
+    }
+
+    .subscribe-btn {
+        background: #BBF330;
+        border-radius: 30px;
+        border: none;
+        height: 42px;
+        margin-left: 32px;
+        color: #2C2C2C;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        padding-left: 22px;
+        padding-right: 22px;
+        padding-top: 11px;
+        padding-bottom: 11px;
+    }
+
+    .subscribe-div2 {
+        width: 656px;
+
+    }
+
+    .subscribe-div2 h2 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 42px;
+        padding-bottom: 20px;
+    }
+
+    .subscribe-div2 p {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #2C2C2C;
+        padding-bottom: 24px;
+    }
+
+    .subscribe-input {
+        outline: none;
+        padding-left: 11px;
+    }
+}

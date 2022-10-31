@@ -5,16 +5,16 @@
 //	--main-background-color: #F5F4FA;
 //  }
 
-  $text-color:             #2C2C2C;
-  $default-button-color:	 #BBF330;
-	$hover-button-color:  	 #7EB101;
-	$main-background-color:  #F5F4FA;
-
+$text-color: #2c2c2c;
+$default-button-color: #bbf330;
+$hover-button-color: #7eb101;
+$main-background-color: #f5f4fa;
+$color-circle: #ffe550;
 
 * {
-	text-decoration: none;
-	outline: 0;
-	margin: 0;
+  text-decoration: none;
+  outline: 0;
+  margin: 0;
 }
 
 ul,
@@ -22,13 +22,13 @@ h2,
 h3,
 p,
 div {
-	list-style: none;
-	padding: 0;
-	margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-button{
-	border: none;
+button {
+  border: none;
 }
 
 body,
@@ -36,58 +36,57 @@ footer,
 header,
 main,
 textarea {
-	font-family: 'Roboto', sans-serif;
-	color: var(--text-color);
-	margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+  margin: 0;
 }
 
 img {
-	display: block;
-	width: 100%;
+  display: block;
+  width: 100%;
 }
 
-.container {	
-	margin: 0 auto;
-	box-sizing: border-box;
-	padding-left: 20px;
-	padding-right: 20px;
-	
-	@media screen and (max-width: 767px){
-		max-width: 767px;
-	}
 
-	@media screen and (min-width: 480px){
-		min-width: 480px;
-	}
+.container {
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-width: 320px;
 
-	@media screen and (min-width: 768px){
-		min-width: 768px;
-	}
 
-	@media screen and (min-width: 1200px){
-		min-width: 1200px;
-	}
+  @media screen and (min-width: 480px) {
+    min-width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    min-width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 1200px;
+  }
 }
 
 .card-container {
-	display: flex;
-	justify-content: flex-start;
-	flex-direction: column;
-	align-items: center;
-	width:280px;
-	height:247px;
-	background-color: #FEFEFE;
-	border-radius: 30px;
-	border-top-left-radius: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  height: 247px;
+  background-color: #fefefe;
+  border-radius: 30px;
+  border-top-left-radius: 0;
 
-	@media screen and (min-width: 768px){
-		width:336px;
-		height:244px;
-	}
+  @media screen and (min-width: 768px) {
+    width: 336px;
+    height: 244px;
+  }
 
-	@media screen and (min-width: 1200px){
-		border-radius: 0px 30px 30px 30px;
-		width: 500px;
-		height: 227px;
-	}
+  @media screen and (min-width: 1200px) {
+    border-radius: 0px 30px 30px 30px;
+    width: 500px;
+    height: 227px;
+  }
 }
