@@ -8,11 +8,10 @@ box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
             justify-content: space-between;
             
         }
-
 }
-
-.menu-button {
-    display: none;
+.logo {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .nav {
@@ -22,10 +21,8 @@ box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
 }
 
 .site-nav {
-    list-style: none;
     display: flex;
     margin: 0 30px 0 0;
-    padding: 0;
 }
   
 .site-nav__item:not(:last-child){
@@ -46,21 +43,15 @@ box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
 
     &-active {
         text-decoration-line: underline;
-        color: #BBF330;
+        color: $default-button-color;
     }
 
     &:hover,
     &:focus {
     text-decoration-line: underline;
-    color: #BBF330;
+    color: $default-button-color;
     }
 }
-
-//  @media screen and (max-width: 767px) {
-//     .header__nav {
-//          display: none;
-//      }
-//  }
 
  @media screen and (max-width: 767px) {
     .site-nav, .modal-button {
