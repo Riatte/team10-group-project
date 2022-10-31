@@ -1,6 +1,5 @@
 .hero {
   padding-top: 60px;
-
   font-size: 14px;
   line-height: 1.5;
   color: #2c2c2c;
@@ -64,6 +63,7 @@
   @media screen and (min-width: 480px) {
     font-size: 16px;
     line-height: 1.5;
+    max-width:502px;
   }
 }
 .hero__button {
