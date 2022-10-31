@@ -30,22 +30,21 @@
 }*/
 
 .order {
-    margin-top: 100px;
-    display: flex;
-    justify-content: end;
 
     &__button {
 
 
         background-color: rgba(187, 243, 48, 1);
         border-radius: 30px;
-        padding: 6px 18px;
+
+        width: 98px;
+        height: 32px;
 
         font-style: normal;
         font-weight: 500;
         font-size: 13px;
         line-height: 1.5;
-        color: rgba(44, 44, 44, 1);
+    
 
 
     }
@@ -148,9 +147,16 @@
         padding-left: 12px;
         margin-top: 2px;
         height: 48px;
-        border: 1px solid #7EB101;
         box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
         border-radius: 30px;
+
+            @media screen and (max-width: 767px) {
+                border: 1px solid rgba(126, 177, 1, 1);
+            }
+
+            @media screen and (min-width: 768px) {
+                border: 1px solid rgba(18, 18, 18, 0.12);
+            }
 
             &::placeholder {
                 font-weight: 400;
@@ -162,8 +168,59 @@
 
 
     &__btn-send {
+        margin-left: auto;
+        margin-right: auto;
+        width: 106px;
+        height: 40px;
         margin-top: 32px;
+
+        background-color: rgba(255, 255, 255, 1);
+        border-radius: 30px;
+        border: 2px solid rgba(126, 177, 1, 1);
+    
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 1.5;
+
     }
     
 }
 
+/*--------------------------------------- HEADER----------------------------------------------------------------*/
+.order_button-header {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+/*--------------------------------------- HERO----------------------------------------------------------------*/
+
+.order_button-hero {
+    margin-top: 28px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 40px;
+    }
+}
+
+/*--------------------------------------- Offerings----------------------------------------------------------------*/
+.order__button-offerings {
+    width: 106px;
+    height: 40px;
+    background: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(126, 177, 1, 1);
+    border-radius: 30px;
+
+        @media screen and (max-width: 767px) {
+            margin-top: 28px;
+        }
+
+        @media screen and (min-width: 768px) {
+            margin-top: 40px;
+        }
+
+         @media screen and (min-width: 1280px) {
+            margin-top: 32px;
+         }
+}
