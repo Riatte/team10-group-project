@@ -81,15 +81,7 @@
     margin-top: 40px;
   }
 }
-.hero__wrap-img {
-  background-image: url(./../images/colorbackgroundfigure.png);
-  background-size: cover;
-  @media screen and (min-width: 480px) {
-    background-image: url(./../images/herobcg.png);
-    padding-top: 150px;
-    background-size: 100%;
-  }
-}
+
 
 .hero__slider {
   margin: 0 8px;
@@ -101,22 +93,4 @@
   }
 }
 
-.hero__mobile-pic {
-  margin: auto;
-  margin-top: 50px;
-  display: block;
-  border: 3px solid rgba(255, 255, 255, 0.5);
-  border: none;
-  padding-top: 41px;
-  @media screen and (min-width: 480px) {
-    display: none;
-  }
-}
-.hero__tablet-pic {
-  @media screen and (max-width: 479px) {
-    display: none;
-  }
-  @media screen and (min-width: 480px) {
-    width: 100%;
-  }
-}
+
