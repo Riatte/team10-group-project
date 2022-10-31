@@ -1,13 +1,6 @@
 
-h2 {
-    margin: 0;
-}
 
-p {
-    margin: 0;
-}
-
-.container {
+/*.container {
     margin-top: 50px;
     outline: solid rosybrown;
     margin-left: auto;
@@ -34,20 +27,18 @@ p {
     }
 
 
-}
+}*/
 
 .order {
-
-    @media screen and (min-width: 768px) {
-        margin-left: 30px;
-    }
+    margin-top: 100px;
+    display: flex;
+    justify-content: end;
 
     &__button {
 
 
         background-color: rgba(187, 243, 48, 1);
         border-radius: 30px;
-        border: none;
         padding: 6px 18px;
 
         font-style: normal;
