@@ -7,6 +7,7 @@
 
     display: block;
     width: 320px;
+
     min-width: 0;
     height: auto;
   }
@@ -17,13 +18,13 @@
 }
 
 .slick-list {
-  border: 14px solid #ffe550;
+  border: 14px solid $color-circle;
   border-radius: 50%;
 
   overflow: hidden;
 
   @media screen and (min-width: 1280px) {
-    border: 26px solid #ffe550;
+    border: 26px solid $color-circle;
   }
 }
 
@@ -46,20 +47,19 @@
 
   border: none;
   font-size: 0;
-  color: #2c2c2c;
+  color: $text-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
-  background: #fefefe;
 
   cursor: pointer;
 
   &:hover,
   &:focus {
-    color: #7eb101;
+    color: $hover-button-color;
   }
 
   &:active {
-    color: #2c2c2c;
+    color: $text-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
   }
 }
