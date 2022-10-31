@@ -1,12 +1,4 @@
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
 
-ul {
-    list-style: none;
-}
 
 @keyframes rotations {
     0% {
@@ -17,11 +9,11 @@ ul {
     }
 }
 
-.sections {
-    text-decoration: none;
-}
+// .sections {
+//     text-decoration: none;
+// }
 
-.title {
+.favorites-title {
     font-family: 'Roboto';
         font-style: normal;
         font-weight: 700;
@@ -30,7 +22,7 @@ ul {
         text-align: center;
 }
 
-.text {
+.favorites-text {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -60,4 +52,5 @@ border:16px solid #BBF330;
 .favorites {
     display: block;
     gap: 32px;
+    list-style: none;
 }
