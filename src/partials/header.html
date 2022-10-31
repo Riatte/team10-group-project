@@ -1,37 +1,97 @@
 <header class="header">
-    <div class="container">
-        <a href="./index.html" class="logo">
-            <svg class="logo__icon" width="66" height="52">
-            <use href="./images/sprite.svg#icon-logo"></use>
-            </svg>
-        </a>
-        <nav class="nav">
-            <button type="button" 
-                    class="menu-button" 
-                    aria-expanded="false"
-                    aria-controls="menu-container">
-                <svg width="28" height="28" aria-label="Перемикач мобільного меню">
-                <use class="icon-menu" href="./images/sprite.svg#open-menu"></use>
-                </svg>
-            </button>
-            <div class="menu-container" id="menu-container">
-            <ul class="site-nav">
+  <div class="container">
+    <a href="./index.html" class="logo">
+      <svg class="logo__icon" width="66" height="52">
+        <use href="./images/sprite.svg#icon-logo"></use>
+      </svg>
+    </a>
+    <nav class="nav header__nav">
+      <!-- Burger button -->
 
-            <button type="button" 
-                    class="menu-button menu-button-close">
-                <svg width="11" height="11" aria-label="Перемикач мобільного меню">
-                <use class="icon-menu" href="./images/sprite.svg#close-menu"></use>
-                </svg>
-            </button>
+      <button type="button" class="menu-toggle js-open-menu menu-burger" 
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg width="28" height="28" aria-label="Перемикач мобільного меню">
+            <use class="icon-menu" href="./images/sprite.svg#open-menu"></use>
+          </svg>                   
+      </button>
 
-                <li class="site-nav__item"> <a href="#home" class="site-nav__link">Home</a></li>
-                <li class="site-nav__item"> <a href="#about" class="site-nav__link">About</a></li>
-                <li class="site-nav__item"> <a href="#service" class="site-nav__link">Service</a></li>
-                <li class="site-nav__item"> <a href="#menu" class="site-nav__link">Menu</a></li>
-                <li class="site-nav__item"> <a href="#contact" class="site-nav__link">Contact</a></li>
-            </ul>
-            </div>
-            <button type="button" class="modal-button header__modal-button">Order Now</button>
-        </nav>
-    </div>
+
+      <!-- <button
+        type="button"
+        class="menu-button"
+        aria-expanded="false"
+        aria-controls="menu-container"
+      >
+        <svg width="28" height="28" aria-label="Перемикач мобільного меню">
+          <use class="icon-menu" href="./images/sprite.svg#open-menu"></use>
+        </svg>
+      </button> -->
+
+
+
+
+      <ul class="site-nav">
+        <!-- <button type="button" class="menu-button menu-button-close">
+          <svg width="11" height="11" aria-label="Перемикач мобільного меню">
+            <use class="icon-menu" href="./images/sprite.svg#close-menu"></use>
+          </svg>
+        </button> -->
+        <li class="site-nav__item">
+          <a href="#home" class="site-nav__link site-nav__link-active">Home</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="#offerings" class="site-nav__link">Offerings</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="#favorites" class="site-nav__link">Favorites</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="#customers" class="site-nav__link">Customers Say</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="#subscribe" class="site-nav__link">Subscribe</a>
+        </li>
+      </ul>
+      <!--<button type="button" class="modal-button header__modal-button">
+        Order Now
+      </button>-->
+<!-----------------------------кнопка Order-now------------------------------------------------->
+      <div class="order">
+        <div>
+          <button class="order__button order_button-header" type="button" data-menu-open>Order Now</button>
+        </div>
+      
+        <div class="order__backdrop is-hidden" data-menu>
+          <div class="order__modal">
+            <button type="button" class="order__btn-x" data-menu-close>
+              <img src="images/close.svg" alt="Close-menu">
+            </button>
+            <h2 class="order__title">Order Form</h2>
+            <form class="order__form">
+              <label class="order__form-set">
+                <p class="order__form-name">Name</p>
+                <input class="order__input" type="text" name="Name" placeholder="Your name" required autofocus>
+              </label>
+              <label class="order__form-set">
+                <p class="order__form-name">Phone number</p>
+                <input class="order__input" type="tel" name="Phone_number" placeholder="+38(0_ _) _ _ _   _ _   _ _" required>
+              </label>
+              <label class="order__form-set">
+                <p class="order__form-name">E-mail</p>
+                <input class="order__input" type="email" name="E-mail" placeholder="example@gmail.com" required>
+              </label>
+              <button type="submit" class="order__btn-send">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+    </nav>
+  </div>
 </header>
+
+
+<!-- Script -->
+<script defer src="./index.js"></script>
+ 
