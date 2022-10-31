@@ -1,6 +1,16 @@
 @import './common';
 
+@import './utils/variables';
+@import './mixins';
+@import './btn-order-now';
+
+@import './header';
+@import './burgermenu';
 
 @import './burgermenu';
-@import './favorites';
+@import './hero';
+@import './slick';
+@import './slider';
+@import './subscribe';
 
+@import './favorites';

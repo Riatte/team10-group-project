@@ -1,0 +1,93 @@
+/* Custom properties */
+.slider {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    position: relative;
+
+    display: block;
+    width: 320px;
+
+    min-width: 0;
+    height: auto;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 580px;
+  }
+}
+
+.slick-list {
+  border: 14px solid $color-circle;
+  border-radius: 50%;
+
+  overflow: hidden;
+
+  @media screen and (min-width: 1280px) {
+    border: 26px solid $color-circle;
+  }
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-slide {
+  height: 100%;
+  min-height: 1px;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 1000;
+  transform: translateY(-50%);
+
+  padding: 0;
+
+  border: none;
+  font-size: 0;
+  color: $text-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $hover-button-color;
+  }
+
+  &:active {
+    color: $text-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.slick-icon {
+  width: 34px;
+  height: 28px;
+
+  fill: currentColor;
+
+  @media screen and (min-width: 1280px) {
+    width: 48px;
+    height: 40px;
+  }
+}
+
+.slick-prev {
+  left: -8px;
+
+  @media screen and (min-width: 1280px) {
+    left: -14px;
+  }
+}
+
+.slick-next {
+  right: -8px;
+
+  @media screen and (min-width: 1280px) {
+    right: -14px;
+  }
+}
