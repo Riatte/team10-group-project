@@ -6,8 +6,6 @@
     @media screen and (max-width: 767px){
     background-image: 
     url(../images/footer-mob.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;
     @media (min-device-pixel-ratio: 2),
@@ -118,7 +116,7 @@ color: $text-color;
 }}
 
 .footer__subscribe{
-    
+    justify-content: space-between;
     &--text{
        
         margin-bottom: 12px;
