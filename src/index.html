@@ -17,10 +17,6 @@
 
     <link rel="stylesheet" href="./sass/index.scss" />
 
-    <script type="module" src="./menu.js"></script>
-    <script type="module" src="./menu-hero.js"></script>
-    <script type="module" src="./menu-offerings.js"></script>
-
     <script type="module" src="./index.js"></script>
   </head>
   <body>
@@ -58,6 +54,19 @@
 
     <script defer type="module" src="./anchor-scroll.js"></script>
 
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
+  <!-- Вікторія -->
+  <include src="./partials/btn-order-now.html"></include>
+
+    <!-- Вікторія -->
+  <include src="./partials/team-modal.html"></include>
+        
+             <!-- footer -->           
+             <include src="./partials/footer.html"></include>
+        <script defer src="./index.js"></script>
+
+        <script type="module" src="./js/menu.js"></script>
+        <script type="module" src="./js/menu-hero.js"></script>
+        <script type="module" src="./js/menu-offerings.js"></script>
+        <script type="module" src="./js/team.js"></script>
   </body>
 </html>
