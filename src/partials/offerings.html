@@ -1,36 +1,119 @@
-<main>
-    <div class="container">
-        <div class="order">
-            <div>
-                <button class="order__button order__button-offerings" type="button" data-menu-offerings-open>Order Now</button>
-            </div>
-
-            <div class="order__backdrop is-hidden" data-menu-offerings>
-                <div class="order__modal">
-                    <button type="button" class="order__btn-x" data-menu-offerings-close>
-                        <svg width="24" height="24">
-                            <use href="./images/sprite.svg#close" aria-label="Перемикач мобільного меню"></use>
-                        </svg>
-                    </button>
-                    <h2 class="order__title">Order Form</h2>
-                    <form class="order__form">
-                        <label class="order__form-set">
-                            <p class="order__form-name">Name</p>
-                            <input class="order__input" type="text" name="Name" placeholder="Your name" required autofocus>
-                        </label>
-                        <label class="order__form-set">
-                            <p class="order__form-name">Phone number</p>
-                            <input class="order__input" type="tel" name="Phone_number" placeholder="+38(0_ _) _ _ _   _ _   _ _"
-                                required>
-                        </label>
-                        <label class="order__form-set">
-                            <p class="order__form-name">E-mail</p>
-                            <input class="order__input" type="email" name="E-mail" placeholder="example@gmail.com" required>
-                        </label>
-                        <button type="submit" class="order__btn-send">Send</button>
-                    </form>
-                </div>
-            </div>
-        </div>
+<section id="offerings" class="offerings">
+  <img
+    class="offerings__desctopImg"
+    srcset="./images/appleD1x.png 1x, ./images/appleD2x.png 2x"
+    media="(min-width:1280px)"
+    src="./images/appleD1x.png"
+    alt="Apple"
+    width="550"
+  />
+  <img
+    class="offerings__tabletImg"
+    srcset="./images/appleT1x.png 1x, ./images/appleT2x.png 2x"
+    media="(min-width:768px)"
+    src="./images/appleT1x.png"
+    alt="Thre apples"
+    width="704"
+  />
+  <img
+    class="offerings__mobileImg"
+    srcset="./images/appleM1x.png 1x, ./images/appleM2x.png 2x"
+    media="(max-width:767px)"
+    src="./images/appleM1x.png"
+    alt="Apple"
+    width="280"
+  />
+  <div class="offerings-special">
+    <h2 class="offerings-special__title">What’s Special About Our Offerings</h2>
+    <p class="offerings-special__text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+      varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+      ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+    </p>
+  </div>
+  <div class="offerings-deliver">
+    <div class="offerings-deliver__circle">
+      <svg class="offerings-deliver__svg" width="32" height="32">
+        <use href="./images/sprite.svg#icon-rocket"></use>
+      </svg>
     </div>
-</main>
+    <h3 class="offerings-deliver__title">Fasest Delivery</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+      varius enim in eros.
+    </p>
+  </div>
+  <div class="offerings-order">
+    <div class="offerings-order__circle">
+      <svg class="offerings-order__svg" width="32" height="32">
+        <use href="./images/sprite.svg#icon-click"></use>
+      </svg>
+    </div>
+    <h3 class="offerings-order__title">Easy To Order</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+      varius enim in eros.
+    </p>
+  </div>
+
+  <!-- Button -->
+  <div class="order">
+    <div>
+      <button
+        class="order__button order__button-offerings"
+        type="button"
+        data-menu-offerings-open
+      >
+        Order Now
+      </button>
+    </div>
+
+    <div class="order__backdrop is-hidden" data-menu-offerings>
+      <div class="order__modal">
+        <button type="button" class="order__btn-x" data-menu-offerings-close>
+          <svg width="24" height="24">
+            <use
+              href="./images/sprite.svg#close"
+              aria-label="Перемикач мобільного меню"
+            ></use>
+          </svg>
+        </button>
+        <h2 class="order__title">Order Form</h2>
+        <form class="order__form">
+          <label class="order__form-set">
+            <p class="order__form-name">Name</p>
+            <input
+              class="order__input"
+              type="text"
+              name="Name"
+              placeholder="Your name"
+              required
+              autofocus
+            />
+          </label>
+          <label class="order__form-set">
+            <p class="order__form-name">Phone number</p>
+            <input
+              class="order__input"
+              type="tel"
+              name="Phone_number"
+              placeholder="+38(0_ _) _ _ _   _ _   _ _"
+              required
+            />
+          </label>
+          <label class="order__form-set">
+            <p class="order__form-name">E-mail</p>
+            <input
+              class="order__input"
+              type="email"
+              name="E-mail"
+              placeholder="example@gmail.com"
+              required
+            />
+          </label>
+          <button type="submit" class="order__btn-send">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

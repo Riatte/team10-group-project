@@ -1,29 +1,58 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title lang="en">FoodSta</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./sass/index.scss" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" rel="stylesheet" />
-
-    
-
     <script type="module" src="./index.js"></script>
-
   </head>
   <body>
-  <include src="./partials/header.html"></include>
-  <!-- hero-section -->
-  <include src="./partials/hero-section.html"></include>
-           <!-- Burgermenu -->           
-  <include src="./partials/burgermenu.html"></include>
+    <include src="./partials/header.html"></include>
 
-  <include src="./partials/offerings.html"></include>
+    <!-- hero-section -->
+    <include src="./partials/hero-section.html"></include>
+    <!-- Burgermenu -->
+    <include src="./partials/burgermenu.html"></include>
+
+    <include src="./partials/offerings.html"></include>
+
+    <!-- Вікторія -->
+    <include src="./partials/btn-order-now.html"></include>
+    <!-- favorites -->
+    <include src="./partials/favorites.html"></include>
+    <!-- subscribe -->
+    <include src="./partials/subscribe.html"></include>
+
+    <!-- footer -->
+    <include src="./partials/footer.html"></include>
+
+    <script defer src="./index.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.6.1.min.js
+"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script defer type="module" src="./slider.js"></script>
+    <script defer src="./index.js"></script>
+
+    <script defer type="module" src="./anchor-scroll.js"></script>
 
   <!-- Вікторія -->
   <include src="./partials/btn-order-now.html"></include>
