@@ -124,3 +124,8 @@
         left: 0;
      }
 
+     .mobile-menu .link:hover .current,
+     .mobile-menu .current:focus {
+   
+      background: #FFE550;
+     }
