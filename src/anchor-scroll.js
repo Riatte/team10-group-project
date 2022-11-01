@@ -1,5 +1,3 @@
-import $ from 'jquery';
-
 $(document).ready(function () {
   // Add smooth scrolling to all links
   $('a').on('click', function (event) {
@@ -17,13 +15,12 @@ $(document).ready(function () {
         {
           scrollTop: $(hash).offset().top,
         },
-        //duration
         800,
         function () {
           // Add hash (#) to URL when done scrolling (default click behavior)
           window.location.hash = hash;
         }
       );
-    }
+    } // End if
   });
 });
