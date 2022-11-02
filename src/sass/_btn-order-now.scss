@@ -40,7 +40,7 @@
     font-size: 13px;
     line-height: 1.5;
 
-    animation: pulse 1500ms both alternate infinite linear;
+    animation: pulse 3000ms infinite;
 
     &:active {
       background-color: rgba(181, 255, 0, 1);
@@ -239,22 +239,21 @@
 /*--------------------------------------------FOTO----------------------------------------------*/
 
 .order {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
 
-    &__list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 20px;
-      margin-bottom: 40px;
-    }
+  &__thumb {
+    width: 100px;
+    height: 100px;
+  }
 
-    &__thumb {
-      width: 100px;
-      height: 100px;
-    }
-
-    &__thumb img {
-      width: 100%;
-      object-fit: cover;
-    }
+  &__thumb img {
+    width: 100%;
+    object-fit: cover;
+  }
 }
