@@ -41,7 +41,9 @@
       }}}
 .footer__wrap{
     display: flex;
-    
+    @media screen and (max-width: 767px){
+        justify-content: space-between;
+    }
    
 }
 
@@ -171,7 +173,7 @@ line-height: 14px;
 color: $text-color;
     }
     &--item{
-        color: $hover-button-color;
+        color: #7EB101;
         text-decoration: underline;
     }
     &--btn{
@@ -209,7 +211,8 @@ margin-left: 13px;
 line-height: 12px;
         }
         &--btn{
-            margin-left: 175px;
+            display: block;
+            margin-left: auto;
             margin-bottom: 20px;
         }
         &--input{
@@ -259,7 +262,7 @@ line-height: 12px;
             text-decoration-line: underline;
             font-size: 10px;
 line-height: 12px;
-            color: $hover-button-color;
+            color: #7EB101;
         }
        &--coment{
         font-weight: 400;
@@ -296,7 +299,7 @@ line-height: 12px;
         }
         &--title{
             text-decoration-line: underline;
-            color: $hover-button-color;
+            color: #7EB101;
         }
        &--coment{
         font-weight: 400;
@@ -324,7 +327,7 @@ line-height: 12px;
     }
     &--title{
         text-decoration-line: underline;
-        color: $hover-button-color;
+        color: #7EB101;
     }
    &--coment{
     font-weight: 400;
