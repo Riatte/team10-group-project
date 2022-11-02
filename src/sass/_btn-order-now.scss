@@ -83,7 +83,8 @@
     width: 320px;
     /*height: 449px;*/
     /*--------------------------------------------START-FOTO---------------------------------------------*/
-    height: 90%;
+    max-height: 90%;
+    overflow-y: scroll;
    
     /*--------------------------------------------END-FOTO---------------------------------------------*/
     padding: 32px 20px;
@@ -111,7 +112,7 @@
     top: 8px;
     width: 32x;
     height: 32px;
-    padding: 4px;
+    padding: 5px;
     border-radius: 50%;
     border: none;
     background-color: rgba(255, 255, 255, 1);
