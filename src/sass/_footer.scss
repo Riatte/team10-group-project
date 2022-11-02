@@ -1,4 +1,5 @@
 .footer{
+    box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
     background-position: center;
     background-repeat: no-repeat;
     margin-left: auto;
@@ -116,6 +117,7 @@
   
     @media screen and (max-width: 767px){
       margin-left: 81px;
+      padding-right: 100px;
       
         &__link{
             padding-top: 18px;
@@ -156,7 +158,7 @@
 }}
 
 .footer__subscribe{
-  
+    
     justify-content: space-between;
     &--text{
        
@@ -175,6 +177,7 @@ color: $text-color;
     &--item{
         color: #7EB101;
         text-decoration: underline;
+         
     }
     &--btn{
         width: 103px;
@@ -183,6 +186,14 @@ background: #FFFFFF;
 border: 0.854167px solid $hover-button-color;
 border-radius: 30px;
 margin-left: 13px;
+animation: pulse 3s infinite;
+transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
+&:hover{
+    border: 0.854167px solid green;
+}
+&:focus {
+    border: 0.854167px solid green;
+}
     }
     &--input{
         width: 279px;
@@ -190,7 +201,16 @@ margin-left: 13px;
         border: 0.854167px solid $color-circle;
         border-radius: 30px;
         margin-bottom: 12px;
-        padding:0px 0px 0px 10px;
+        padding-left: 11px;
+        transition: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover{
+    border: 0.854167px solid orange;
+    
+}
+&:focus {
+    border: 0.854167px solid orange;
+    
+}
       
         &::placeholder{
             font-family: 'Roboto';
@@ -199,9 +219,8 @@ margin-left: 13px;
     font-size: 12px;
     line-height: 150%;
     color: #505050;
-    padding: 12px 12px 12px 12px;
-    
     align-items: center;
+
         }
     }
     @media screen and (max-width: 767px){
@@ -214,6 +233,7 @@ line-height: 12px;
             display: block;
             margin-left: auto;
             margin-bottom: 20px;
+            
         }
         &--input{
             width: 100%;
@@ -230,7 +250,7 @@ line-height: 12px;
         font-size: 12px;
         line-height: 150%;
         color: #505050;
-        padding: 12px 12px 12px 12px;
+        
         
         align-items: center;
             }
