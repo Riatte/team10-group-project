@@ -40,20 +40,20 @@ row-gap: 20px;
 gap: 32px;}
 
 
-&__img {
-width: 100%;
-max-width: 280px;
+    &__img {
+    width: 100%;
+    max-width: 280px;
 
-background: #FFFFFF;
-border: 11px solid $color-circle;
-padding: 29px 28px;
+    background: #FFFFFF;
+    border: 11px solid $color-circle;
+    padding: 29px 28px;
 
-border-radius: 100%;
-animation-name: rotations;
-animation-duration: 20s;
-animation-iteration-count: infinite;
-animation-timing-function: linear;
-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 100%;
+    animation-name: rotations;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 @media screen and (min-width:768px) {
 max-width: 336px;
@@ -75,7 +75,6 @@ padding: 41px 40px;
  @media screen and (min-width:1280px) {  
 border: 16px solid $default-button-color;
  }}}
-
 
 
 .favorites__img-hidden {
