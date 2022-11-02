@@ -66,17 +66,16 @@ border: 16px solid $color-circle;
 padding: 41px 40px;
 }}
 
-&__img:hover,
-&__img:focus {
-border: 11px solid $default-button-color;
-@media screen and (min-width:768px) {
-border: 14px solid $default-button-color;
-}
-
-@media screen and (min-width:1280px) {  
+ &__img:hover,
+ &__img:focus {
+ border: 11px solid $default-button-color;
+ @media screen and (min-width:768px) {
+ border: 14px solid $default-button-color;
+ }
+ @media screen and (min-width:1280px) {  
 border: 16px solid $default-button-color;
-}
-}}
+ }}}
+
 
 
 .favorites__img-hidden {
@@ -92,4 +91,8 @@ display: none;}
     100% {
         transform: rotate(360deg);
     }
+}
+
+.favorites__link:focus{
+    background-color: aqua;
 }
