@@ -41,6 +41,7 @@
       }}}
 .footer__wrap{
     display: flex;
+    
    
 }
 
@@ -68,15 +69,52 @@
     width: 66px;
 }
 .list{
+    @media screen and (max-width: 767px){
+        margin-bottom: 40px;
+    }
     &__item{
         font-weight: 400;
-font-size: 14px;
-line-height: 16px;
-color: $text-color;
+        font-size: 14px;
+        line-height: 16px;
+        color: $text-color;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            
+        
+            display: block;
+            height: 1px;
+            width: 100%;
+        
+            transform: scale(0);
+            transform-origin: right;
+        
+            background-color: #000000;
+        
+            transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1),
+              background-color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+          }
+        
+          &:hover,
+          &:focus {
+            &::after {
+              transform: scale(1);
+              transform-origin: left;
+        
+              background: $default-button-color;
+            }
+        
+            color: $default-button-color;
+          }
     }
+    
+
+    
   
     @media screen and (max-width: 767px){
       margin-left: 81px;
+      
         &__link{
             padding-top: 18px;
 
@@ -116,6 +154,7 @@ color: $text-color;
 }}
 
 .footer__subscribe{
+  
     justify-content: space-between;
     &--text{
        
@@ -173,6 +212,26 @@ line-height: 12px;
             margin-left: 175px;
             margin-bottom: 20px;
         }
+        &--input{
+            width: 100%;
+            height: 42px;
+            border: 0.854167px solid $color-circle;
+            border-radius: 30px;
+            margin-bottom: 12px;
+            padding:0px 0px 0px 10px;
+          
+            &::placeholder{
+                font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        color: #505050;
+        padding: 12px 12px 12px 12px;
+        
+        align-items: center;
+            }
+        }
         
     }
     @media screen and (min-width: 768px) and (max-width: 1279px){
@@ -213,6 +272,7 @@ line-height: 12px;
        &--text{
         display: flex;
         margin-bottom: 40px;
+        justify-content: space-between;
         
     }
     }
