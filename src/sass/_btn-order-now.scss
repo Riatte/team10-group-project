@@ -52,6 +52,10 @@
         background-color: rgba(181, 255, 0, 1);
       }
     }
+
+    &:focus {
+      border: solid 3px green ;
+    }
   }
 
   &__backdrop {
@@ -221,6 +225,10 @@
     @media screen and (min-width: 768px) {
       border: 2px solid rgba(89, 125, 0, 1);
     }
+  }
+
+  &:focus {
+    border: solid 3px green;
   }
 
   @media screen and (max-width: 767px) {
