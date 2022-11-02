@@ -40,7 +40,7 @@
     font-size: 13px;
     line-height: 1.5;
 
-    animation: pulse 1500ms both alternate infinite linear;
+    animation: pulse 3000ms infinite;
 
     &:active {
       background-color: rgba(181, 255, 0, 1);
@@ -261,5 +261,8 @@
       height: 100px;
     }
 
- 
+  &__thumb img {
+    width: 100%;
+    object-fit: cover;
   }
+}

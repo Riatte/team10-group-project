@@ -7,7 +7,7 @@
 
 $text-color: #2c2c2c;
 $default-button-color: #bbf330;
-$hover-button-color: #7eb101;
+$hover-button-color: #b5ff00;
 $main-background-color: #f5f4fa;
 $color-circle: #ffe550;
 
@@ -53,29 +53,28 @@ img {
   width: 100%;
 }
 
-
 .container {
-	margin: 0 auto;
-	box-sizing: border-box;
-	padding-left: 20px;
-	padding-right: 20px;
-	min-width: 320px;
-  
-	@media screen and (max-width: 767px) {
-	  max-width: 480px;
-	}
-  
-	@media screen and (min-width: 768px) {
-	  width: 768px;
-	  padding-left: 32px;
-	  padding-right: 32px;
-	}
-  
-	@media screen and (min-width: 1280px) {
-	  width: 1280px;
-	  padding-left: 16px;
-	  padding-right: 16px;
-	}
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-width: 320px;
+
+  @media screen and (max-width: 767px) {
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 .card-container {
@@ -94,7 +93,7 @@ img {
     height: 244px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     border-radius: 0px 30px 30px 30px;
     width: 500px;
     height: 227px;
