@@ -52,6 +52,10 @@
         background-color: rgba(181, 255, 0, 1);
       }
     }
+
+    &:focus {
+      border: solid 3px green ;
+    }
   }
 
   &__backdrop {
@@ -62,7 +66,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(94, 99, 99, 0.7);
-    overflow-y: scroll;
+   
 
     &.is-hidden {
       opacity: 0;
@@ -80,7 +84,7 @@
     /*height: 449px;*/
     /*--------------------------------------------START-FOTO---------------------------------------------*/
     height: 90%;
-    overflow-y: scroll;
+    overflow-y: auto;
     /*--------------------------------------------END-FOTO---------------------------------------------*/
     padding: 32px 20px;
     background-color: rgba(255, 229, 80, 1);
@@ -223,6 +227,10 @@
     }
   }
 
+  &:focus {
+    border: solid 3px green;
+  }
+
   @media screen and (max-width: 767px) {
     margin-top: 28px;
   }
@@ -239,18 +247,19 @@
 /*--------------------------------------------FOTO----------------------------------------------*/
 
 .order {
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-    margin-bottom: 40px;
-  }
 
-  &__thumb {
-    width: 100px;
-    height: 100px;
-  }
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    &__thumb {
+      width: 100px;
+      height: 100px;
+    }
 
   &__thumb img {
     width: 100%;
