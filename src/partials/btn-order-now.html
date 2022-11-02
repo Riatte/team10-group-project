@@ -1,120 +1,154 @@
 <div class="order">
-
-    <div class="order__backdrop is-hidden" data-menu data-menu-hero data-menu-offerings>
-        <div class="order__modal">
-            <button type="button" class="order__btn-x" data-menu-close>
-                <svg width="24" height="24">
-                    <use href="./images/sprite.svg#close" aria-label="Перемикач мобільного меню"></use>
-                </svg>
-            </button>
-            <h2 class="order__title">Order</h2>
-            <form class="order__form">
+  <div
+    class="order__backdrop is-hidden"
+    data-menu
+    data-menu-hero
+    data-menu-offerings
+  >
+    <div class="order__modal">
+      <button type="button" class="order__btn-x" data-menu-close>
+        <svg width="24" height="24">
+          <use
+            href="./images/sprite.svg#close"
+            aria-label="Перемикач мобільного меню"
+          ></use>
+        </svg>
+      </button>
+      <h2 class="order__title">Order</h2>
+      <form class="order__form">
         <!-----------------------------------------------------------START foto into form------------------------------------------->
-                <div class="order__list">
+        <div class="order__list">
+          <label class="order__set">
+            <input type="checkbox" name="menu" value="borshch" checked />
+            Borshch
+            <div class="order__thumb">
+              <picture>
+                <source
+                  srcset="
+                    ./images/form-order/borshch.png    1x,
+                    ./images/form-order/borshch@2x.png 2x
+                  "
+                />
+                <img src="./images/form-order/borshch.png" alt="" />
+              </picture>
+            </div>
+          </label>
 
-                    <label class="order__set">
-                        <input type="checkbox" name="menu" value="borshch" checked />
-                        Borshch
-                        <div class="order__thumb">
-                            <picture>
-                                <source srcset="
-                                    ./images/form-order/borshch.png 1x,
-                                    ./images/form-order/borshch@2x.png 2x
-                                    "/>
-                                <img src="./images/form-order/borshch.png" alt=""/>
-                            </picture> 
-                        </div>
-                    </label>
+          <label class="order__set">
+            <input type="checkbox" name="menu" value="chicken" />
+            Chicken
+            <div class="order__thumb">
+              <picture>
+                <source
+                  srcset="
+                    ./images/form-order/chicken.png    1x,
+                    ./images/form-order/chicken@2x.png 2x
+                  "
+                />
+                <img src="./images/form-order/chicken.png" alt="" />
+              </picture>
+            </div>
+          </label>
 
-                    <label class="order__set">
-                        <input type="checkbox" name="menu" value="chicken" />
-                        Chicken
-                        <div class="order__thumb">
-                           <picture>
-                            <source srcset="
-                                ./images/form-order/chicken.png 1x,
-                                ./images/form-order/chicken@2x.png 2x
-                                " />
-                            <img src="./images/form-order/chicken.png" alt="" />
-                            </picture>
-                        </div>
-                    </label>
+          <label class="order__set">
+            <input type="checkbox" name="menu" value="gamburger" />
+            Gamburger
+            <div class="order__thumb">
+              <picture>
+                <source
+                  srcset="
+                    ./images/form-order/gamburger.png    1x,
+                    ./images/form-order/gamburger@2x.png 2x
+                  "
+                />
+                <img src="./images/form-order/gamburger.png" alt="" />
+              </picture>
+            </div>
+          </label>
 
-                    <label class="order__set">
-                        <input type="checkbox" name="menu" value="gamburger" />
-                        Gamburger
-                        <div class="order__thumb">
-                            <picture>
-                                <source srcset="
-                                    ./images/form-order/gamburger.png 1x,
-                                    ./images/form-order/gamburger@2x.png 2x
-                                    " />
-                                <img src="./images/form-order/gamburger.png" alt="" />
-                            </picture>
-                        </div>
-                    </label>
+          <label class="order__set">
+            <input type="checkbox" name="menu" value="pasta" />
+            Pasta
+            <div class="order__thumb">
+              <picture>
+                <source
+                  srcset="
+                    ./images/form-order/pasta.png    1x,
+                    ./images/form-order/pasta@2x.png 2x
+                  "
+                />
+                <img src="./images/form-order/pasta.png" alt="" />
+              </picture>
+            </div>
+          </label>
 
-                    <label class="order__set">
-                        <input type="checkbox" name="menu" value="pasta" />
-                        Pasta
-                        <div class="order__thumb">
-                            <picture>
-                                <source srcset="
-                                    ./images/form-order/pasta.png 1x,
-                                    ./images/form-order/pasta@2x.png 2x
-                                    " />
-                                <img src="./images/form-order/pasta.png" alt="" />
-                            </picture>
-                        </div>
-                    </label>
+          <label class="order__set">
+            <input type="checkbox" name="menu" value="pizza" />
+            Pizza
+            <div class="order__thumb">
+              <picture>
+                <source
+                  srcset="
+                    ./images/form-order/pizza.png    1x,
+                    ./images/form-order/pizza@2x.png 2x
+                  "
+                />
+                <img src="./images/form-order/pizza.png" alt="" />
+              </picture>
+            </div>
+          </label>
 
-                    <label class="order__set">
-                        <input type="checkbox" name="menu" value="pizza" />
-                        Pizza
-                        <div class="order__thumb">
-                            <picture>
-                                <source srcset="
-                                    ./images/form-order/pizza.png 1x,
-                                    ./images/form-order/pizza@2x.png 2x
-                                    " />
-                                <img src="./images/form-order/pizza.png" alt="" />
-                            </picture>
+          <label class="order__set">
+            <input type="checkbox" name="menu" value="salat" />
+            Salat
+            <div class="order__thumb">
+              <picture>
+                <source
+                  srcset="
+                    ./images/form-order/salat.png    1x,
+                    ./images/form-order/salat@2x.png 2x
+                  "
+                />
+                <img src="./images/form-order/salat.png" alt="" />
+              </picture>
+            </div>
+          </label>
 
-                        </div>
-                    </label>
-
-                    <label class="order__set">
-                        <input type="checkbox" name="menu" value="salat" />
-                        Salat
-                        <div class="order__thumb">
-                            <picture>
-                                <source srcset="
-                                    ./images/form-order/salat.png 1x,
-                                    ./images/form-order/salat@2x.png 2x
-                                    " />
-                                <img src="./images/form-order/salat.png" alt="" />
-                            </picture>
-                        </div>
-                    </label>
-
-            <!-----------------------------------------------------------END foto into form------------------------------------------->
-
-                </div>
-                <label class="order__form-set">
-                    <p class="order__form-name">Name</p>
-                    <input class="order__input" type="text" name="Name" placeholder="Your name" required autofocus />
-                </label>
-                <label class="order__form-set">
-                    <p class="order__form-name">Phone number</p>
-                    <input class="order__input" type="tel" name="Phone_number" placeholder="+38(0_ _) _ _ _   _ _   _ _"
-                        required />
-                </label>
-                <label class="order__form-set">
-                    <p class="order__form-name">E-mail</p>
-                    <input class="order__input" type="email" name="E-mail" placeholder="example@gmail.com" required />
-                </label>
-                <button type="submit" class="order__btn-send">Send</button>
-            </form>
+          <!-----------------------------------------------------------END foto into form------------------------------------------->
         </div>
+        <label class="order__form-set">
+          <p class="order__form-name">Name</p>
+          <input
+            class="order__input"
+            type="text"
+            name="Name"
+            placeholder="Your name"
+            required
+            autofocus
+          />
+        </label>
+        <label class="order__form-set">
+          <p class="order__form-name">Phone number</p>
+          <input
+            class="order__input"
+            type="tel"
+            name="Phone_number"
+            placeholder="+38(0_ _) _ _ _   _ _   _ _"
+            required
+          />
+        </label>
+        <label class="order__form-set">
+          <p class="order__form-name">E-mail</p>
+          <input
+            class="order__input"
+            type="email"
+            name="E-mail"
+            placeholder="example@gmail.com"
+            required
+          />
+        </label>
+        <button type="submit" class="order__btn-send">Send</button>
+      </form>
     </div>
+  </div>
 </div>
