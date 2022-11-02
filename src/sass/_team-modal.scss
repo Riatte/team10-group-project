@@ -3,14 +3,21 @@
     display: flex;
     justify-content: end;
 
-    margin-top: 30px;
+    margin-top: -60px;
 
     &__btn {
         background-color: greenyellow;
-        width: 60px;
+        width: 103px;
         height: 42px;
-        border-radius: 20%;
         border: none;
+        text-transform: uppercase;
+        font-weight: 700;
+
+            &:hover {
+               
+                transform: translateY(-20%) scale(1.15);
+                transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+            }
     }
 
     &__backdrop {
@@ -84,7 +91,10 @@
     }
 
     &__set {
-        border: solid 2px gray;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    
+        background-color: grey;
+
         border-radius: 15px;
         padding: 15px 10px 5px 10px;
 
@@ -123,6 +133,12 @@
         height: 100%;
         object-fit: cover;
         border-radius: 50%;
+
+             &:hover {
+                transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+                width: 120%;
+                height: 120%;
+            }
 
     }
 
