@@ -90,11 +90,15 @@
     .subscribe-div1 {
         width: 280px;
         height: 78px;
-        background-image: url(/src/images/banan3.png);
+        background-image: url(/src/images/bananaM1x.png);
         margin-bottom: 17px;
         margin-left: auto;
         margin-right: auto;
         background-position: center center;
+
+        @include retina {
+            background-image: url(/src/images/bananaM2x.png);
+        }
     }
 
 
@@ -140,8 +144,12 @@
     .subscribe-div1 {
         width: 281px;
         height: 136px;
-        background-image: url(/src/images/banan2.png);
+        background-image: url(/src/images/bananaT1x.png);
         margin-left: 423px;
+
+        @include retina{
+            background-image: url(/src/images/appleT2x.png);
+        }
     }
 }
 
@@ -154,9 +162,13 @@
     .subscribe-div1 {
         width: 608px;
         height: 266px;
-        background-image: url(/src/images/banan.png);
+        background-image: url(/src/images/bananaD1x.png);
         margin-left: 639px;
         position: absolute;
+
+        @include retina{
+            background-image: url(/src/images/bananaD2x.png);
+        }
     }
 
     .subscribe-btn {
