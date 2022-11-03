@@ -1,18 +1,23 @@
 @import './common';
+@import './utils/aos';
+@import './utils/slick';
+@import './utils/animations';
 
 @import './utils/variables';
 @import './mixins';
 @import './btn-order-now';
+@import './team-modal';
 
- @import './header';
- @import './burgermenu';
- @import './burgermenu';
- @import './hero';
- @import './offerings';
- @import './slick';
+@import './header';
+@import './burgermenu';
+@import './burgermenu';
+@import './hero';
+@import './offerings';
 @import './slider';
+@import './customers';
 @import './subscribe';
 
 @import './favorites';
 @import './footer';
 
+@import './btn-up';

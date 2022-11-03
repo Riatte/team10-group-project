@@ -44,16 +44,13 @@
     background: #B5FF00;
 }
 
-.subscribe-div1 {
-
-    background-repeat: no-repeat;
-}
 
 @media screen and (max-width: 767px) {
     .subscribe {
         display: block;
         align-items: center;
         padding-bottom: 60px;
+        margin-top: -45px;
     }
 
     .subscribe-div2 p {
@@ -75,7 +72,7 @@
     }
 
     .subscribe-input {
-        width: 280px;
+        width: 100%;
         margin-bottom: 20px;
         height: 42px;
         outline: none;
@@ -84,18 +81,25 @@
 
     .subscribe-btn {
         display: block;
-        margin-left: 177px;
+        margin-left: auto;
     }
 
-    .subscribe-div1 {
-        width: 280px;
-        height: 78px;
-        background-image: url(/src/images/banan3.png);
+    .subscribe-desctopImg {
+        display: none;
+    }
+
+    .subscribe-mobileImg {
+        width: 161px;
         margin-bottom: 17px;
         margin-left: auto;
         margin-right: auto;
-        background-position: center center;
     }
+
+    .subscribe-tabletImg {
+        display: none;
+    }
+
+   
 
 
 
@@ -105,6 +109,7 @@
     .subscribe {
         display: block;
         padding-bottom: 100px;
+        margin-top: -70px;
     }
 
     .subscribe-div2 h2 {
@@ -137,12 +142,20 @@
         margin-left: 22px;
     }
 
-    .subscribe-div1 {
+    .subscribe-mobileImg {
+        display: none;
+    }
+
+    .subscribe-tabletImg {
         width: 281px;
-        height: 136px;
-        background-image: url(/src/images/banan2.png);
         margin-left: 423px;
     }
+
+    .subscribe-desctopImg{
+        display: none;
+    }
+
+    
 }
 
 @media screen and (min-width: 1280px) {
@@ -151,13 +164,7 @@
         padding-bottom: 100px;
     }
 
-    .subscribe-div1 {
-        width: 608px;
-        height: 266px;
-        background-image: url(/src/images/banan.png);
-        margin-left: 639px;
-        position: absolute;
-    }
+   
 
     .subscribe-btn {
         background: #BBF330;
@@ -203,4 +210,19 @@
         outline: none;
         padding-left: 11px;
     }
+
+    .subscribe-desctopImg {
+        width: 546px;
+        position: absolute;
+        margin-left: 639px;
+    }
+
+    .subscribe-tabletImg {
+        display: none;
+    }
+
+    .subscribe-mobileImg {
+        display: none;
+    }
 }
+

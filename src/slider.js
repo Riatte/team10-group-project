@@ -1,11 +1,10 @@
-$(document).ready(function () {
-  $('.slider').slick({
-    autoplay: true,
-    autoplaySpeed: 7500,
-    speed: 750,
-    pauseOnFocus: false,
+$('.slider').slick({
+  autoplay: true,
+  autoplaySpeed: 7500,
+  speed: 750,
+  pauseOnFocus: false,
 
-    prevArrow: `<button class="slick-prev" type="button" onclick="this.blur();">
+  prevArrow: `<button class="slick-prev" type="button" onclick="this.blur();">
     <svg class="slick-icon" xmlns="http://www.w3.org/2000/svg" width="38" height="32" viewBox="0 0 38 32">
       <path fill="#FEFEFE"
         d="M0 25.6v-19.2c0-3.535 2.865-6.4 6.4-6.4h25.6c3.535 0 6.4 2.865 6.4 6.4v19.2c0 3.535-2.865 6.4-6.4 6.4h-25.6c-3.535 0-6.4-2.865-6.4-6.4z">
@@ -15,7 +14,7 @@ $(document).ready(function () {
       </path>
     </svg>
 </button> `,
-    nextArrow: `<button class="slick-next" type="button" onclick="this.blur();">
+  nextArrow: `<button class="slick-next" type="button" onclick="this.blur();">
     <svg class="slick-icon" xmlns="http://www.w3.org/2000/svg" width="38" height="32" viewBox="0 0 38 32">
       <path fill="#FEFEFE"
         d="M38.4 6.4v19.2c0 3.535-2.865 6.4-6.4 6.4h-25.6c-3.535 0-6.4-2.865-6.4-6.4v-19.2c0-3.535 2.865-6.4 6.4-6.4h25.6c3.535 0 6.4 2.865 6.4 6.4z">
@@ -25,5 +24,4 @@ $(document).ready(function () {
       </path>
     </svg>
 </button>`,
-  });
 });

@@ -14,14 +14,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <link rel="stylesheet" href="./sass/index.scss" />
-
-    <script type="module" src="./menu.js"></script>
-    <script type="module" src="./menu-hero.js"></script>
-    <script type="module" src="./menu-offerings.js"></script>
-
-    <script type="module" src="./index.js"></script>
   </head>
   <body>
     <include src="./partials/header.html"></include>
@@ -37,26 +35,40 @@
     <include src="./partials/btn-order-now.html"></include>
     <!-- favorites -->
     <include src="./partials/favorites.html"></include>
+    <!-- customers -->
+    <include src="./partials/customers.html"></include>
     <!-- subscribe -->
     <include src="./partials/subscribe.html"></include>
 
     <!-- footer -->
     <include src="./partials/footer.html"></include>
 
-    <script defer src="./index.js"></script>
+    <!-- Вікторія -->
+    <include src="./partials/team-modal.html"></include>
+
+    <include src="./partials/btn-up.html"></include>
+
     <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-3.6.1.min.js
-"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     ></script>
     <script
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-    <script defer type="module" src="./slider.js"></script>
     <script defer src="./index.js"></script>
+    <script defer type="module" src="./anchor-scroll.js"></script>
+    <script defer type="module" src="./slider.js"></script>
 
-
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
+    <script type="module" src="./js/menu.js"></script>
+    <script type="module" src="./js/menu-hero.js"></script>
+    <script type="module" src="./js/menu-offerings.js"></script>
+    <script type="module" src="./js/team.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

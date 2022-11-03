@@ -1,5 +1,3 @@
-
-
 /*.container {
     margin-top: 50px;
     outline: solid rosybrown;
@@ -30,220 +28,306 @@
 }*/
 
 .order {
+  &__button {
+    background-color: $default-button-color;
+    border-radius: 30px;
 
-    &__button {
+    width: 98px;
+    height: 32px;
 
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
 
-        background-color: rgba(187, 243, 48, 1);
-        border-radius: 30px;
+    animation: pulse 3000ms infinite;
 
-        width: 98px;
-        height: 32px;
-
-        font-style: normal;
-        font-weight: 500;
-        font-size: 13px;
-        line-height: 1.5;
-
-            &:active {
-                    background-color: rgba(181, 255, 0, 1);
-                }
-
-
-            &:focus, &:hover {
-
-                @media screen and (min-width: 768px) {
-                    background-color: rgba(181, 255, 0, 1);
-                }
-
-            }
-
+    &:active {
+      background-color: $hover-button-color;
     }
 
-    &__backdrop {
-   
-            position: fixed;
-            z-index: 6;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(94, 99, 99, 0.7);
-            overflow-y: scroll;
-
-            &.is-hidden {
-                opacity: 0;
-                pointer-events: none;
-            }
-     
+    &:focus,
+    &:hover {
+      @media screen and (min-width: 768px) {
+        background-color: $hover-button-color;
+      }
     }
 
-    &__modal {
-            position: absolute;
-            z-index: 7;
-            top: 50%;
-            left: 50%;
-            transform: scale(1) translate(-50%, -50%);
-            width: 320px;
-            height: 449px;
-            padding: 32px 20px;
-            background-color: rgba(255, 229, 80, 1);
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-            border-radius: 30px;
+    &:focus {
+      border: solid 3px green;
+    }
+  }
 
-                @media screen and (min-width: 768px) {
-                    width: 458px;
-                    padding: 32px 32px;
-                }
+  &__backdrop {
+    position: fixed;
+    z-index: 6;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(94, 99, 99, 0.7);
 
-                @media screen and (max-height: 448px) and (orientation: landscape) {
-                    max-height: 95vh;
-                    overflow-y: scroll;
-                    margin-top: 5px;
-                    margin-bottom: 5px;
-                }
+    &.is-hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
 
-        
+  &__modal {
+    position: absolute;
+    z-index: 7;
+    top: 50%;
+    left: 50%;
+    transform: scale(1) translate(-50%, -50%);
+    width: 320px;
+    /*height: 449px;*/
+    /*--------------------------------------------START-FOTO---------------------------------------------*/
+    max-height: 90%;
+    overflow-y: scroll;
+
+    /*--------------------------------------------END-FOTO---------------------------------------------*/
+    padding: 32px 20px;
+    background-color: $color-circle;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+    border-radius: 30px;
+
+    @media screen and (min-width: 768px) {
+      width: 458px;
+      padding: 32px 32px;
     }
 
-    &__btn-x {
+    @media screen and (max-height: 448px) and (orientation: landscape) {
+      max-height: 95vh;
+      overflow-y: scroll;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  }
 
-            position: absolute;
-            z-index: 8;
-            right: 8px;
-            top: 8px;
-            width: 32x;
-            height: 32px;
-            padding: 4px;
-            border-radius: 50%;
-            border: none;
-            background-color: rgba(255, 255, 255, 1);
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  &__btn-x {
+    position: absolute;
+    z-index: 8;
+    right: 8px;
+    top: 8px;
+    width: 32x;
+    height: 32px;
+    padding: 5px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  }
 
+  &__title {
+    text-align: center;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+  }
+
+  &__form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__form-set {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__form-name {
+    margin-left: 12px;
+  }
+
+  &__input {
+    padding-left: 12px;
+    margin-top: 2px;
+    height: 48px;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+
+    @media screen and (max-width: 767px) {
+      border: 1px solid rgba(126, 177, 1, 1);
     }
 
-    &__title {
-        text-align: center;
-
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 120%;
+    @media screen and (min-width: 768px) {
+      border: 1px solid rgba(18, 18, 18, 0.12);
     }
 
-    &__form {
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column;
+    &::placeholder {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: rgba(196, 196, 196, 1);
+    }
+    &:valid {
+      border: 1px solid rgba(126, 177, 1, 1);
+      box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
     }
 
-    &__form-set {
-        display: flex;
-        flex-direction: column;
-        margin-top: 24px;
-
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 140%;
-
-            &:first-child {
-                margin-top: 0;
-            }
+    &:not(:placeholder-shown):invalid {
+      border: 1px solid $color-warning;
+      box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
     }
+  }
 
-    &__form-name {
-        margin-left: 12px;
+  &__btn-send {
+    margin-left: auto;
+    margin-right: auto;
+    width: 106px;
+    height: 40px;
+    margin-top: 32px;
+
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 30px;
+    border: 2px solid rgba(126, 177, 1, 1);
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      background-color: #bbf330;
     }
+  }
 
-    &__input {
-        padding-left: 12px;
-        margin-top: 2px;
-        height: 48px;
-        box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 30px;
+  &__wrap {
+    display: none;
 
-            @media screen and (max-width: 767px) {
-                border: 1px solid rgba(126, 177, 1, 1);
-            }
+    .order__input:not(:placeholder-shown):invalid + & {
+      position: absolute;
+      top: 100%;
 
-            @media screen and (min-width: 768px) {
-                border: 1px solid rgba(18, 18, 18, 0.12);
-            }
-
-            &::placeholder {
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 20px;
-                color: rgba(196, 196, 196, 1);
-            }
+      display: flex;
+      align-items: center;
+      padding: 0 12px;
     }
+  }
 
+  &__warning {
+    margin-left: 5px;
 
-    &__btn-send {
-        margin-left: auto;
-        margin-right: auto;
-        width: 106px;
-        height: 40px;
-        margin-top: 32px;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 1.4;
 
-        background-color: rgba(255, 255, 255, 1);
-        border-radius: 30px;
-        border: 2px solid rgba(126, 177, 1, 1);
-    
-        font-style: normal;
-        font-weight: 500;
-        font-size: 13px;
-        line-height: 1.5;
+    color: $color-warning;
 
+    @media screen and (min-width: 768px) {
+      font-size: 12px;
     }
-    
+    @media screen and (min-width: 1280px) {
+      font-size: 13px;
+    }
+  }
 }
 
 /*--------------------------------------- HEADER----------------------------------------------------------------*/
 .order_button-header {
-    @media screen and (max-width: 767px) {
-        display: none;
-    }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 /*--------------------------------------- HERO----------------------------------------------------------------*/
 
 .order_button-hero {
-    margin-top: 28px;
+  margin-top: 28px;
 
-    @media screen and (min-width: 768px) {
-        margin-top: 40px;
-    }
+  @media screen and (min-width: 768px) {
+    margin-top: 40px;
+  }
 }
 
 /*--------------------------------------- Offerings----------------------------------------------------------------*/
 .order__button.order__button-offerings {
-    width: 106px;
-    height: 40px;
-    background: rgba(255, 255, 255, 1);
-    border: 2px solid rgba(126, 177, 1, 1);
-    border-radius: 30px;
+  width: 106px;
+  height: 40px;
+  background: rgba(255, 255, 255, 1);
+  border: 2px solid rgba(126, 177, 1, 1);
+  border-radius: 30px;
 
-         &:active {
-                    border: 2px solid rgba(89, 125, 0, 1);
-                }
+  &:active {
+    border: 2px solid rgba(89, 125, 0, 1);
+  }
 
+  &:hover {
+    @media screen and (min-width: 768px) {
+      border: 2px solid rgba(89, 125, 0, 1);
+    }
+  }
 
-            &:focus, &:hover {
+  &:focus {
+    border: solid 3px green;
+  }
 
-                @media screen and (min-width: 768px) {
-                    border: 2px solid rgba(89, 125, 0, 1);
-                }
-            }
+  @media screen and (max-width: 767px) {
+    margin-top: 28px;
+  }
 
-        @media screen and (max-width: 767px) {
-            margin-top: 28px;
-        }
+  @media screen and (min-width: 768px) {
+    margin-top: 40px;
+  }
 
-        @media screen and (min-width: 768px) {
-            margin-top: 40px;
-        }
+  @media screen and (min-width: 1280px) {
+    margin-top: 32px;
+  }
+}
 
-         @media screen and (min-width: 1280px) {
-            margin-top: 32px;
-         }
+/*--------------------------------------------FOTO----------------------------------------------*/
+
+.order {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    &__thumb {
+      margin-top: 5px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+
+    }
+
+    
+}
+
+.order__check:checked + .order__label> .order__thumb {
+   
+      transform: scale(1.05);
+      transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+      border: solid 2px green;
+}
+
+.order__check {
+  accent-color: green;
 }

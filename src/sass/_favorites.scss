@@ -7,15 +7,6 @@
     }
 }
 
-@keyframes rotations {
-    0% {
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-}
-
 .favorites-title {
     font-size: 42px;
     line-height: 1.16;
@@ -44,44 +35,63 @@ flex-wrap: wrap;
 justify-content: center;
 list-style: none;
 text-decoration: none;
-gap: 32px;
-    
-}
-// width ?//
-.favorites__img {
-background: #FEFEFE;
-border: 11px solid #FFE550;
-padding: 29px 28px;
+row-gap: 20px;
+@media screen and (min-width:768px) {
+gap: 32px;}
 
-border-radius: 100%;
-animation-name: rotations;
-animation-duration: 20s;
-animation-iteration-count: infinite;
-animation-timing-function: linear;
-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+    &__img {
+    width: 100%;
+    max-width: 280px;
+
+    background: #FFFFFF;
+    border: 11px solid $color-circle;
+    padding: 29px 28px;
+
+    border-radius: 100%;
+    animation-name: rotations;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 @media screen and (min-width:768px) {
-    flex-basis: calc(100% - 32px /2);
-    border: 14px solid #FFE550;
-    padding: 35px 34px;
-    }
+max-width: 336px;
+border: 14px solid $color-circle;
+padding: 35px 34px;}
+
 @media screen  and (min-width:1280px) {
-    flex-basis: calc(100% / 2 - 32px);
-    border: 16px solid #FFE550;
-    padding: 41px 40px;
+max-width: 394px;
+border: 16px solid $color-circle;
+padding: 41px 40px;
 }}
 
-
-
-.favorites__img:hover,
-.favorites__img:focus {
-border:16px solid #BBF330;
-}
+ &__img:hover,
+ &__img:focus {
+ border: 11px solid $default-button-color;
+ @media screen and (min-width:768px) {
+ border: 14px solid $default-button-color;
+ }
+ @media screen and (min-width:1280px) {  
+border: 16px solid $default-button-color;
+ }}}
 
 
 .favorites__img-hidden {
 @media screen and (max-width:767px) {
-    display: none;
+display: none;}
+}
+
+@keyframes rotations {
+    0% {
+        transform: rotate(0deg);
     }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.favorites__link:focus{
+    background-color: aqua;
 }
