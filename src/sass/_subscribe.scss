@@ -44,10 +44,6 @@
     background: #B5FF00;
 }
 
-.subscribe-div1 {
-
-    background-repeat: no-repeat;
-}
 
 @media screen and (max-width: 767px) {
     .subscribe {
@@ -88,19 +84,22 @@
         margin-left: auto;
     }
 
-    .subscribe-div1 {
-        width: 280px;
-        height: 78px;
-        background-image: url(/src/images/bananaM1x.png);
+    .subscribe-desctopImg {
+        display: none;
+    }
+
+    .subscribe-mobileImg {
+        width: 161px;
         margin-bottom: 17px;
         margin-left: auto;
         margin-right: auto;
-        background-position: center center;
-
-        @include retina {
-            background-image: url(/src/images/bananaM2x.png);
-        }
     }
+
+    .subscribe-tabletImg {
+        display: none;
+    }
+
+   
 
 
 
@@ -143,16 +142,20 @@
         margin-left: 22px;
     }
 
-    .subscribe-div1 {
-        width: 281px;
-        height: 136px;
-        background-image: url(/src/images/bananaT1x.png);
-        margin-left: 423px;
-
-        @include retina{
-            background-image: url(/src/images/bananaT2x.png);
-        }
+    .subscribe-mobileImg {
+        display: none;
     }
+
+    .subscribe-tabletImg {
+        width: 281px;
+        margin-left: 423px;
+    }
+
+    .subscribe-desctopImg{
+        display: none;
+    }
+
+    
 }
 
 @media screen and (min-width: 1280px) {
@@ -161,17 +164,7 @@
         padding-bottom: 100px;
     }
 
-    .subscribe-div1 {
-        width: 608px;
-        height: 266px;
-        background-image: url(/src/images/bananaD1x.png);
-        margin-left: 639px;
-        position: absolute;
-
-        @include retina{
-            background-image: url(/src/images/bananaD2x.png);
-        }
-    }
+   
 
     .subscribe-btn {
         background: #BBF330;
@@ -217,4 +210,19 @@
         outline: none;
         padding-left: 11px;
     }
+
+    .subscribe-desctopImg {
+        width: 546px;
+        position: absolute;
+        margin-left: 639px;
+    }
+
+    .subscribe-tabletImg {
+        display: none;
+    }
+
+    .subscribe-mobileImg {
+        display: none;
+    }
 }
+
