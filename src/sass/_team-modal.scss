@@ -1,5 +1,4 @@
 .team {
-    color: rgb(196, 195, 199);
     display: flex;
     justify-content: end;
 
@@ -96,6 +95,7 @@
         transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
     
         background-color: grey;
+        color: rgb(236, 234, 240);
 
         border-radius: 15px;
         padding: 15px 10px 5px 10px;
@@ -154,8 +154,9 @@
         font-size: 18px;
         line-height: 1.1;
         margin-top: 15px;
-    }
 
+    }
+    
     &__name {
         font-size: 14px;
         line-height: 1.1;
