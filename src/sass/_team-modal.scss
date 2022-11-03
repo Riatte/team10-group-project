@@ -6,10 +6,9 @@
     margin-top: -60px;
 
     &__btn {
-        background-color: greenyellow;
+        background-color: $default-button-color;
         width: 103px;
         height: 42px;
-        border: none;
         text-transform: uppercase;
         font-weight: 700;
 
@@ -20,10 +19,7 @@
                 font-size: 20px;
                 font-weight: 900;
             }
-
-            &:focus {
-                border: solid 3px green;
-            }
+       
     }
 
     &__backdrop {
