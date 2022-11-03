@@ -1,31 +1,4 @@
-/*.container {
-    margin-top: 50px;
-    outline: solid rosybrown;
-    margin-left: auto;
-    margin-right: auto;
 
-
-
-    @media screen and (max-width: 767px) {
-        max-width: 480px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    @media screen and (min-width: 768px) {
-        width: 768px;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-
-    @media screen and (min-width: 1280px) {
-        width: 1280px;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-
-
-}*/
 
 .order {
   &__button {
@@ -116,6 +89,12 @@
     border: none;
     background-color: rgba(255, 255, 255, 1);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+
+      &:focus,
+      &:active {
+        border: solid 1px green;
+        padding: 4px;
+      }
   }
 
   &__title {
@@ -181,6 +160,10 @@
     &:not(:placeholder-shown):invalid {
       border: 1px solid $color-warning;
       box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+    }
+
+    &:focus {
+      border: solid 3px green;
     }
   }
 
@@ -316,10 +299,8 @@
       border-radius: 50%;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 
+       
     }
-
-    
-}
 
 .order__check:checked + .order__label> .order__thumb {
    
@@ -330,4 +311,6 @@
 
 .order__check {
   accent-color: green;
+
+}
 }
