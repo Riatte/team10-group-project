@@ -1,9 +1,12 @@
 .offerings {
+    
     margin: 0 auto;
     box-sizing: border-box;
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 60px;
     min-width: 320px;
+    width: 100%;
     
     font-weight: 400;
     font-size: 14px;
@@ -37,6 +40,9 @@
                 width: 768px;
                 padding-left: 32px;
                 padding-right: 32px;
+                padding-bottom: 100px;
+
+                margin-top: -120px;
         
                 @media (min-device-pixel-ratio: 2),
                 (min-resolution: 192dpi),
@@ -55,6 +61,8 @@
                 width: 1280px;
                 padding-left: 16px;
                 padding-right: 16px;
+                padding-bottom: 43px;
+                margin-top: -140px;
         
                 @media (min-device-pixel-ratio: 2),
                 (min-resolution: 192dpi),
@@ -67,14 +75,28 @@
             }                       
 }
 
+.offerings-cover {
+    @media screen and(min-width:1280px) {
+            display: flex;           
+    }
+}
+
+.offerings-images {
+    @media screen and(min-width:768px) {
+        padding-top: 132px;
+    }
+
+    @media screen and(min-width:1280px) {
+    width: calc((100% - 90px) / 2);
+    margin-right: 90px;
+    }
+}
+
 .offerings__desctopImg {
   display: none;
         
     @media screen and(min-width:1280px) {
-        display: inline-block;
-        width: calc((100% - 90px) / 2);
-        height: auto;
-        margin-top: 117px;
+        display: block;
     }
 }
 
@@ -82,8 +104,7 @@
     display: none;
     @media screen and(min-width:768px)  {
         display: block;
-        height: auto;
-        margin-top: 150px; 
+        height: auto; 
     }
         @media screen and(min-width:1280px) {
             display: none;
@@ -91,7 +112,6 @@
 }
 
 .offerings__mobileImg {
-    margin-top: 41px;
     height: auto;
     @media screen and(min-width:768px) {
         display: none;
@@ -99,12 +119,22 @@
     }
 }
 
+.offerings-content {
+    @media screen and(min-width:1280px) {
+            width: calc((100% - 90px) / 2);
+            margin-top: 260px;
+        }
+}
+
 .offerings-special {
+
+    @media screen and(min-width:768px) {
+        max-width: 526px;
+    }
 
     @media screen and(min-width:1280px) {
     display: inline-block;
-    width: calc((100% - 90px) / 2);
-    height: auto;
+    margin-bottom: 40px;
     }
 }
 
@@ -135,8 +165,25 @@ margin-top: 60px;
     }
 }
 
+.offerings-secondaryCover {
+    @media screen and(min-width:768px) {
+        display: flex;
+    } 
+
+}
+
 .offerings-deliver {
     margin-top: 28px;
+
+    @media screen and(min-width:768px) {
+        max-width: 253px;
+        margin-right: 116px;
+
+    }
+
+    @media screen and(min-width:1280px) {
+            margin-right: 67px;
+    }
 }
 
 .offerings-deliver__circle {
@@ -148,16 +195,27 @@ margin-top: 60px;
     height: 48px;
   background: #FEFEFE;
   border-radius: 50%;
+  margin-bottom: 8px;
 }
 
 .offerings-deliver__title {
     font-weight: 700;
     font-size: 18px;
     line-height: 1,17;
+    margin-bottom: 16px;
 }
 
 .offerings-order {
     margin-top: 28px;
+
+    @media screen and(min-width:768px) {
+            max-width: 253px;
+            margin-right: 116px;
+        }
+
+        @media screen and(min-width:1280px) {
+            margin-right: 67px;
+        }
 }
 
 .offerings-order__circle {
@@ -169,4 +227,57 @@ margin-top: 60px;
     height: 48px;
     background: #FEFEFE;
     border-radius: 50%;
+    margin-bottom: 8px;
 }
+
+.offerings-order__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1, 17;
+    margin-bottom: 16px;
+}
+
+.offerings-btns {
+    display: flex;
+    align-items: baseline;
+}
+
+.offerings-btns__link {
+    color: #2C2C2C;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1,4;
+    text-decoration: none;
+    list-style: none;
+    margin-left: 24px;
+    display: flex;
+    align-items: flex-start;
+
+    @media screen and(min-width:1280px) {
+        display: none;
+    }
+
+    &:hover, 
+    &:focus,
+    &:active {
+        color: #7EB101;
+    }
+}
+
+.offerings-btns__link:hover .offerings-btns__icone {
+    fill: #7EB101;
+}
+
+.offerings-btns__link:focus .offerings-btns__icone {
+    fill: #7EB101;
+}
+
+.offerings-btns__link:active .offerings-btns__icone {
+    fill: #7EB101;
+}
+
+.offerings-btns__icone {
+    margin-left: 4px;
+    fill: #2C2C2C;
+}
+
