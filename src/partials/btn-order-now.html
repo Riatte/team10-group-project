@@ -140,9 +140,18 @@
             type="text"
             name="Name"
             placeholder="Your name"
+            maxlength="100"
             required
             autofocus
           />
+          <div class="order__wrap">
+            <svg width="12" height="12">
+              <use href="./images/sprite.svg#icon-warning"></use>
+            </svg>
+            <p class="order__warning">
+              The name must be between 3 and 25 characters
+            </p>
+          </div>
         </label>
         <label class="order__form-set">
           <p class="order__form-name">Phone number</p>
@@ -151,8 +160,19 @@
             type="tel"
             name="Phone_number"
             placeholder="+38(0_ _) _ _ _   _ _   _ _"
+            pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+            minlength="10"
+            maxlength="10"
             required
           />
+          <div class="order__wrap">
+            <svg width="12" height="12">
+              <use href="./images/sprite.svg#icon-warning"></use>
+            </svg>
+            <p class="order__warning">
+              This phone must be in the format 099 000 00 00
+            </p>
+          </div>
         </label>
         <label class="order__form-set">
           <p class="order__form-name">E-mail</p>
@@ -161,8 +181,15 @@
             type="email"
             name="E-mail"
             placeholder="example@gmail.com"
+            maxlength="100"
             required
           />
+          <div class="order__wrap">
+            <svg width="12" height="12">
+              <use href="./images/sprite.svg#icon-warning"></use>
+            </svg>
+            <p class="order__warning">Please enter a valid email address</p>
+          </div>
         </label>
         <button type="submit" class="order__btn-send">Send</button>
       </form>
