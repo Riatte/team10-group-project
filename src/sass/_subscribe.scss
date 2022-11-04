@@ -37,7 +37,13 @@
     padding-right: 22px;
     padding-top: 11px;
     padding-bottom: 11px;
+    animation: pulse 3s infinite;
 }
+
+.subscribe-btn:focus {
+    border: 3px solid green;
+}
+
 
 .subscribe-btn:hover,
 .subscribe-btn:focus {
