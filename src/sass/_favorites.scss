@@ -43,16 +43,11 @@ gap: 32px;}
     &__img {
     width: 100%;
     max-width: 280px;
-
     background: #FFFFFF;
     border: 11px solid $color-circle;
     padding: 29px 28px;
 
     border-radius: 100%;
-    animation-name: rotations;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 @media screen and (min-width:768px) {
@@ -67,14 +62,15 @@ padding: 41px 40px;
 }}
 
  &__img:hover,
- &__img:focus {
- border: 11px solid $default-button-color;
- @media screen and (min-width:768px) {
- border: 14px solid $default-button-color;
- }
+ &__img:focus
+  {
+  border: 6px solid $default-button-color;
+  @media screen and (min-width:768px) {
+  border: 8px solid $default-button-color;
+  }
  @media screen and (min-width:1280px) {  
-border: 16px solid $default-button-color;
- }}}
+ border: 10px solid $default-button-color;
+  }}}
 
 
 .favorites__img-hidden {
@@ -82,16 +78,139 @@ border: 16px solid $default-button-color;
 display: none;}
 }
 
-@keyframes rotations {
-    0% {
-        transform: rotate(0deg);
-    }
 
-    100% {
-        transform: rotate(360deg);
-    }
+.favorites__card {
+z-index: 1;
+position: relative;
+overflow: hidden;
 }
 
-.favorites__link:focus{
-    background-color: aqua;
+.favorites__hover {
+position: absolute;  
+display: block;
+
+padding: 10px;
+width: 90%;
+height: 30%;
+top: 70%;
+left: 5%;
+opacity: 0;
+border-radius: 10px;
+
+background:$default-button-color;
+border: 2px solid  $default-button-color;
+transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
+.favorites__book {
+color: $text-color;
+font-size: 20px;
+font-weight: 700;
+line-height: 1, 17;
+padding-bottom: 10px;
+padding-top: 10px;
+
+@media screen and (max-width:1279px) {
+font-size: 18px;
+font-weight: 700;
+line-height: 1,17;
+padding-bottom: 6px;
+padding-top: 5px;
+ 
+    }
+@media screen and (max-width:767px) {
+font-size: 16px;
+font-weight: 700;
+line-height: 1, 17;
+padding-bottom: 6px;
+padding-top: 0;
+}
+    
+}
+
+.favorites__text {
+font-size: 18px;
+line-height: 1.19;
+font-weight: 400;
+color: $text-color;
+@media screen and (max-width:1279px) {
+font-size: 16px;
+line-height: 1, 17;
+}}
+
+.favorites__button {
+position: relative;
+width: 116px;
+height: 40px;
+background: #fff;
+border: 2px solid #7eb101;
+border-radius: 30px;
+text-align: start;
+padding-left: 10px;
+@media screen and (max-width:768px){
+width: 40px;
+height: 40px;
+font-size: 0;
+line-height: 0;
+margin-top: -4px;
+
+}}
+
+// .favorites__button:hover,
+// .favorites__button:focus {
+// //   /  width: 150px;
+   
+// }
+
+.favorites__other {
+display: flex;
+justify-content: space-between; 
+}
+
+.favorites__icon {
+
+
+    
+@media screen and (max-width:1279px) {
+right: 8%;
+bottom: 25%;
+    }
+position: absolute;
+width: 20px;
+height: 25px;
+right: 7%;
+bottom: 27%;
+fill: $default-button-color;  
+  
+}
+
+.favorites__link:hover .favorites__hover,
+.favorites__link:focus .favorites__hover {
+    opacity: 1;
+    transform: translate(0);
+}
+
+
+// .favorites__line {
+//     border-right: 2px solid #FFFFFF;
+//     background: rgba(255, 214, 0, .5);
+//     height: 2px;
+//     margin: 3px 10px;
+// }
+
+
+// @keyframes rotations {
+//     0% {
+//         transform: rotate(0deg);
+//     }
+
+//     100% {
+//         transform: rotate(360deg);
+//     }
+// }
+
+// animation-name: rotations;
+// animation-duration: 20s;
+// animation-iteration-count: infinite;
+// animation-timing-function: linear;
