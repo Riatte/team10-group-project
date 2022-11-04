@@ -189,7 +189,12 @@
         width: 656px;
 
     }
-
+    @media screen and (min-width: 1280px) {
+		  .subscribe-div2 {
+			    margin-top: 30px;
+		  }
+	  }
+  
     .subscribe-div2 h2 {
         font-family: 'Roboto';
         font-style: normal;
