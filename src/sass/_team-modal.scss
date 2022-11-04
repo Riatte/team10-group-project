@@ -181,6 +181,11 @@
         left: 7px;
         fill: white;
 
+        @media screen and (max-width: 399px) {
+          width: 25;
+          height: 25;
+        }
+
     }
     
     &__title-span {
