@@ -227,11 +227,6 @@
    border-color: rgba(255, 112, 93, 1);
  }
 
- .order__form:placeholder-shown:invalid .order__btn-send {
-  border-color: $hover-button-color-secondary;
- }
-
- 
 /*--------------------------------------- HEADER----------------------------------------------------------------*/
 .order_button-header {
   @media screen and (max-width: 767px) {
