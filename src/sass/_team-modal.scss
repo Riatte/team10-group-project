@@ -90,14 +90,14 @@
     color: rgb(236, 234, 240);
 
     border-radius: 15px;
-    padding: 15px 10px 5px 10px;
+    padding: 15px;
 
     text-align: center;
 
     &:hover,
     &:active,
     &:focus {
-      transform: scale(1.1);
+      transform: scale(1.05);
       color: $text-color;
     }
 
@@ -105,8 +105,10 @@
       width: calc((100% - 20px) / 2);
     }
 
+
     @media screen and (min-width: 768px) {
       width: calc((100% - 40px) / 3);
+
     }
 
     @media screen and (min-width: 1280px) {
@@ -130,10 +132,18 @@
     border-radius: 50%;
   }
 
+
   &__title {
     font-size: 18px;
     line-height: 1.1;
     margin-top: 15px;
+  }
+
+  &__set {
+
+        position: relative;
+
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   }
 
   &__name {
@@ -142,9 +152,31 @@
     margin-top: 10px;
   }
 
+
   &__paragraph {
     margin-top: 20px;
     font-size: 12px;
     line-height: 1.1;
   }
+
+  &__gh {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    fill: white;
+
+  }
+
+  &__title-span {
+
+    @media screen and (max-width: 479px) {
+      display: block;
+    }
+  }
 }
+
+.team__set:hover .team__gh {
+    fill: $text-color;
+    transform: scale(1.1);
+}
+
