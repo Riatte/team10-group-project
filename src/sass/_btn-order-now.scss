@@ -227,6 +227,10 @@
    border-color: rgba(255, 112, 93, 1);
  }
 
+.validForm {
+  background-color: blue;
+}
+
 /*--------------------------------------- HEADER----------------------------------------------------------------*/
 .order_button-header {
   @media screen and (max-width: 767px) {
@@ -305,6 +309,8 @@
        
     }
 
+}
+
 .order__check:checked + .order__label> .order__thumb {
    
       transform: scale(1.05);
@@ -314,6 +320,5 @@
 
 .order__check {
   accent-color: green;
+}
 
-}
-}
