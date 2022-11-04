@@ -32,10 +32,10 @@
     left: 0;
     opacity: 0.7;
 
-    @media screen and (min-width: 768px) {
-        width: 20px;
-        height: 28px;
-    }
+    animation-direction: alternate;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+
     @media screen and (min-width: 1280px) {
         width: 25px;
         height: 37px;
