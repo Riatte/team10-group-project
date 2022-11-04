@@ -103,7 +103,8 @@
         text-align: center;
 
         &:hover,
-        &:active {
+        &:active,
+        &:focus {
             transform: scale(1.1);
             color: $text-color;
     
