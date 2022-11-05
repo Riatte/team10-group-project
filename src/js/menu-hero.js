@@ -1,14 +1,14 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector("[data-menu-hero-open]"),
-    closeModalBtn: document.querySelector("[data-menu-hero-close]"),
-    modal: document.querySelector("[data-menu-hero]"),
+    openModalBtn: document.querySelector('[data-menu-hero-open]'),
+    modal: document.querySelector('[data-menu-hero]'),
   };
+  const bodyScroll = document.querySelector('body');
 
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
+  refs.openModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
-    refs.modal.classList.toggle("is-hidden");
+    refs.modal.classList.toggle('is-hidden');
+    bodyScroll.classList.toggle('locked');
   }
 })();
