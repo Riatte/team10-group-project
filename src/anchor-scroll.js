@@ -5,7 +5,7 @@ $(document).on('click', 'a[href^="#"]', function (event) {
   if (getComputedStyle(headerPosition).position == 'fixed') {
     $('html, body').animate(
       {
-        scrollTop: $($.attr(this, 'href')).offset().top + -72,
+        scrollTop: $($.attr(this, 'href')).offset().top - 72,
       },
       1000
     );
