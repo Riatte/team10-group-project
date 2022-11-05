@@ -184,11 +184,9 @@
     font-size: 13px;
     line-height: 1.5;
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    :focus {
-      color: inherit;
-    }
+    
   }
 
   &__wrap {
@@ -224,6 +222,9 @@
 
 .order__form:valid .order__btn-send {
   background-color: $default-button-color;
+  &:focus {
+      border-color: green;
+    }
 
 }
 
@@ -315,7 +316,7 @@
 
 .order__check:checked + .order__label > .order__thumb {
   transform: scale(1.05);
-  transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: solid 2px green;
 }
 
