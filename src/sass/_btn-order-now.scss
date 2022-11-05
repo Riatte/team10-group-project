@@ -4,6 +4,7 @@
   &__button {
     background-color: $default-button-color;
     border-radius: 30px;
+    color: inherit;
 
     width: 98px;
     height: 32px;
@@ -38,6 +39,7 @@
     background-color: rgba(94, 99, 99, 0.7);
 
     &.is-hidden {
+      visibility: hidden;
       opacity: 0;
       pointer-events: none;
     }
@@ -175,6 +177,7 @@
     margin-top: 32px;
 
     background-color: rgba(255, 255, 255, 1);
+    color: inherit;
     border-radius: 30px;
     border: 2px solid rgba(126, 177, 1, 1);
 

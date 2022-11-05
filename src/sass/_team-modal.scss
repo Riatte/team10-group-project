@@ -28,6 +28,7 @@
     background-color: rgba(94, 99, 99, 0.7);
 
     &.is-hidden {
+      visibility: hidden;
       opacity: 0;
       pointer-events: none;
     }
@@ -98,7 +99,7 @@
 
     &:hover,
     &:active,
-    &:focus {
+    &:focus-within {
       transform: scale(1.05);
       color: $text-color;
     }
@@ -179,7 +180,9 @@
 }
     
 
-.team__set:hover .team__gh {
+.team__set:hover .team__gh,
+.team__set:focus-within .team__gh,
+.team__set:active .team__gh {
     fill: $text-color;
     transform: scale(1.1);
 }
