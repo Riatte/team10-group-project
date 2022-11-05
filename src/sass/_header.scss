@@ -7,6 +7,13 @@
     align-items: center;
     justify-content: space-between;
   }
+
+  @media screen and (max-width: 1279px) {
+    position: fixed;
+    top: 0;
+    z-index: 6;
+    width: 100%;
+  }
 }
 .logo {
   padding-top: 10px;

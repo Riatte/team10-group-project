@@ -1,40 +1,35 @@
 .team {
-    display: flex;
-    justify-content: end;
+  display: flex;
+  justify-content: end;
 
-    margin-top: -60px;
+  margin-top: -60px;
 
-    &__link {
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 14px;
-        text-decoration: underline;
-        color: $text-color;
+  &__link {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: underline;
+    color: $text-color;
 
-            &:hover,
-            &:focus {
-               color: $hover-button-color;
-               cursor: pointer;
-            }
-
+    &:hover,
+    &:focus {
+      color: $hover-button-color;
+      cursor: pointer;
     }
+  }
 
-    &__backdrop {
+  &__backdrop {
+    position: fixed;
+    z-index: 6;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(94, 99, 99, 0.7);
 
-        position: fixed;
-        z-index: 6;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(94, 99, 99, 0.7);
-
-
-        &.is-hidden {
-            opacity: 0;
-            pointer-events: none;
-        }
-
+    &.is-hidden {
+      opacity: 0;
+      pointer-events: none;
     }
 
     &__modal {
@@ -67,27 +62,34 @@
 
     }
 
-    &__btn-x {
-
-        position: absolute;
-        z-index: 8;
-        right: 8px;
-        top: 12px;
-        width: 32x;
-        height: 32px;
-        padding: 3px;
-        border-radius: 50%;
-        border: solid 1px rgb(34, 36, 34);
-        background-color: rgba(255, 255, 255, 1);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+    @media screen and (min-width: 768px) {
+      width: 700px;
     }
 
-    &__list {
-
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
+    @media screen and (min-width: 1280px) {
+      width: 1100px;
     }
+  }
+
+  &__btn-x {
+    position: absolute;
+    z-index: 8;
+    right: 8px;
+    top: 12px;
+    width: 32x;
+    height: 32px;
+    padding: 3px;
+    border-radius: 50%;
+    border: solid 1px rgb(34, 36, 34);
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 
     &__set {
 
@@ -130,49 +132,35 @@
             width: calc((100% - 60px)/4);
         }
 
-               
+              
 
+    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    background-color: grey;
+    color: rgb(236, 234, 240);
+
+    border-radius: 15px;
+    padding: 15px 10px 5px 10px;
+
+    text-align: center;
+
+    &:hover,
+    &:active,
+    &:focus {
+      transform: scale(1.1);
+      color: $text-color;
     }
 
-    &__thumb {
-        margin-left: auto;
-        margin-right: auto;
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        object-fit: cover;
+    @media screen and (max-width: 767px) {
+      width: calc((100% - 20px) / 2);
     }
 
-
-    &__thumb>img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 50%;
-
-
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 40px) / 3);
     }
 
-
-    &__title {
-        font-size: 18px;
-        line-height: 1.1;
-        margin-top: 15px;
-
-    }
-    
-    &__name {
-        font-size: 14px;
-        line-height: 1.1;
-        margin-top: 10px;
-
-    }
-
-    &__paragraph {
-        margin-top: 20px;
-        font-size: 12px;
-        line-height: 1.1;
-
+    @media screen and (min-width: 1280px) {
+      width: calc((100% - 60px) / 4);
     }
 
     &__gh {
@@ -202,4 +190,40 @@
 .team__set:hover .team__gh {
     fill: $text-color;
     transform: scale(1.1);
+}
+  }
+
+  &__thumb {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  &__thumb > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 1.1;
+    margin-top: 15px;
+  }
+
+  &__name {
+    font-size: 14px;
+    line-height: 1.1;
+    margin-top: 10px;
+  }
+
+  &__paragraph {
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 1.1;
+  }
 }
