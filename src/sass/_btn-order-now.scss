@@ -227,7 +227,7 @@
 
 }
 
-.order__input:not(:placeholder-shown):invalid ~ .order__btn-send {
+.order__input:not(:placeholder-shown):invalid~.order__btn-send {
   border-color: rgba(255, 112, 93, 1);
 }
 
