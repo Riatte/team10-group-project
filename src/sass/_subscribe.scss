@@ -1,34 +1,167 @@
 .subscribe-div2 h2 {
-    color: #2C2C2C;
+  color: #2c2c2c;
 }
 
 .subscribe-div2 p {
-    color: #2C2C2C;
-
+  color: #2c2c2c;
 }
 
 .subscribe-input {
-    background: #FEFEFE;
-    border: 0.854167px solid #FFE550;
-    border-radius: 30px;
+  background: #fefefe;
+  border: 0.854167px solid #ffe550;
+  border-radius: 30px;
 }
 
 .subscribe-input::placeholder {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    color: #505050;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: #505050;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
 }
 
 .subscribe-btn {
-    background: #BBF330;
+  background: #bbf330;
+  border-radius: 30px;
+  border: none;
+  height: 42px;
+  color: #2c2c2c;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  animation: pulse 3s infinite;
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background: #b5ff00;
+}
+
+@media screen and (max-width: 767px) {
+  .subscribe {
+    display: block;
+    align-items: center;
+    padding-bottom: 60px;
+    margin-top: -45px;
+  }
+
+  .subscribe-div2 p {
+    padding-bottom: 40px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+
+  .subscribe-div2 h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    padding-bottom: 20px;
+  }
+
+  .subscribe-input {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 42px;
+    outline: none;
+    padding-left: 11px;
+  }
+
+  .subscribe-btn {
+    display: block;
+    margin-left: auto;
+  }
+
+  .subscribe-desctopImg {
+    display: none;
+  }
+
+  .subscribe-mobileImg {
+    width: 161px;
+    margin-bottom: 17px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .subscribe-tabletImg {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe {
+    display: block;
+    padding-bottom: 100px;
+    margin-top: -70px;
+  }
+
+  .subscribe-div2 h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    padding-bottom: 20px;
+  }
+
+  .subscribe-div2 p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    padding-bottom: 24px;
+  }
+
+  .subscribe-form {
+    display: flex;
+  }
+
+  .subscribe-input {
+    width: 394px;
+    outline: none;
+    padding-left: 11px;
+  }
+
+  .subscribe-btn {
+    margin-left: 22px;
+  }
+
+  .subscribe-mobileImg {
+    display: none;
+  }
+
+  .subscribe-tabletImg {
+    width: 281px;
+    margin-left: 423px;
+  }
+
+  .subscribe-desctopImg {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .subscribe {
+    display: flex;
+    padding-bottom: 100px;
+  }
+
+  .subscribe-btn {
+    background: #bbf330;
     border-radius: 30px;
     border: none;
     height: 42px;
-    color: #2C2C2C;
+    margin-left: 32px;
+    color: #2c2c2c;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -37,195 +170,48 @@
     padding-right: 22px;
     padding-top: 11px;
     padding-bottom: 11px;
-    animation: pulse 3s infinite;
+  }
+
+  .subscribe-div2 {
+    width: 656px;
+    padding-top: 46px;
+  }
+
+  .subscribe-div2 h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    padding-bottom: 20px;
+  }
+
+  .subscribe-div2 p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #2c2c2c;
+    padding-bottom: 24px;
+  }
+
+  .subscribe-input {
+    outline: none;
+    padding-left: 11px;
+  }
+
+  .subscribe-desctopImg {
+    width: 546px;
+    position: absolute;
+    margin-left: 639px;
+    display: block;
+  }
+
+  .subscribe-tabletImg {
+    display: none;
+  }
+
+  .subscribe-mobileImg {
+    display: none;
+  }
 }
-
-
-.subscribe-btn:hover,
-.subscribe-btn:focus {
-    background: #B5FF00;
-}
-
-
-@media screen and (max-width: 767px) {
-    .subscribe {
-        display: block;
-        align-items: center;
-        padding-bottom: 60px;
-        margin-top: -45px;
-    }
-
-    .subscribe-div2 p {
-        padding-bottom: 40px;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.14;
-
-    }
-
-    .subscribe-div2 h2 {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 28px;
-        padding-bottom: 20px;
-    }
-
-    .subscribe-input {
-        width: 100%;
-        margin-bottom: 20px;
-        height: 42px;
-        outline: none;
-        padding-left: 11px;
-    }
-
-    .subscribe-btn {
-        display: block;
-        margin-left: auto;
-    }
-
-    .subscribe-desctopImg {
-        display: none;
-    }
-
-    .subscribe-mobileImg {
-        width: 161px;
-        margin-bottom: 17px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .subscribe-tabletImg {
-        display: none;
-    }
-
-   
-
-
-
-}
-
-@media screen and (min-width: 768px) {
-    .subscribe {
-        display: block;
-        padding-bottom: 100px;
-        margin-top: -70px;
-    }
-
-    .subscribe-div2 h2 {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 42px;
-        padding-bottom: 20px;
-    }
-
-    .subscribe-div2 p {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        padding-bottom: 24px;
-    }
-
-    .subscribe-form {
-        display: flex;
-    }
-
-    .subscribe-input {
-        width: 394px;
-        outline: none;
-        padding-left: 11px;
-    }
-
-    .subscribe-btn {
-        margin-left: 22px;
-    }
-
-    .subscribe-mobileImg {
-        display: none;
-    }
-
-    .subscribe-tabletImg {
-        width: 281px;
-        margin-left: 423px;
-    }
-
-    .subscribe-desctopImg{
-        display: none;
-    }
-
-    
-}
-
-@media screen and (min-width: 1280px) {
-    .subscribe {
-        display: flex;
-        padding-bottom: 100px;
-    }
-
-   
-
-    .subscribe-btn {
-        background: #BBF330;
-        border-radius: 30px;
-        border: none;
-        height: 42px;
-        margin-left: 32px;
-        color: #2C2C2C;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 13px;
-        padding-left: 22px;
-        padding-right: 22px;
-        padding-top: 11px;
-        padding-bottom: 11px;
-    }
-
-    .subscribe-div2 {
-        width: 656px;
-
-    }
-
-    .subscribe-div2 h2 {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 42px;
-        padding-bottom: 20px;
-    }
-
-    .subscribe-div2 p {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 150%;
-        color: #2C2C2C;
-        padding-bottom: 24px;
-    }
-
-    .subscribe-input {
-        outline: none;
-        padding-left: 11px;
-    }
-
-    .subscribe-desctopImg {
-        width: 546px;
-        position: absolute;
-        margin-left: 639px;
-        display: block;
-    }
-
-    .subscribe-tabletImg {
-        display: none;
-    }
-
-    .subscribe-mobileImg {
-        display: none;
-    }
-}
-
