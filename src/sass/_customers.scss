@@ -17,6 +17,7 @@
         }
 
     @media screen and (min-width: 480px) {
+        width: 480px;
 
         background-image: url("../images/customers/customers-bg-img-mobile-480-1x.png");
 
@@ -26,6 +27,7 @@
     }
 
     @media screen and (min-width: 768px) {
+        width: 768px;
     padding-bottom: 120px;
 
     background-image: url("../images/customers/customers-bg-img-tab-1x.png");
@@ -38,7 +40,7 @@
     @media screen and (min-width: 1280px) {
         padding-top: 100px;
         padding-bottom: 200px;
-        max-width: 1280px;
+        width: 1280px;
 
         background-image: url("../images/customers/customers-bg-img-desk-1x.png");
 
