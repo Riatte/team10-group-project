@@ -1,44 +1,44 @@
 .btn-up {
-    position: fixed;
-    bottom: 10px;
-    right: 55px;
+  position: fixed;
+  bottom: 10px;
+  right: 55px;
+  z-index: 5;
 
-    @media screen and (max-width: 1279px) {
-        display: none;
-    }
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
 }
 
 .btn-up__link {
-    position: relative;
-    top: -30px;
-    left: -20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 12px;
-    width: 45px;
-    height: 80px;
-    fill: #7eb101;
+  position: relative;
+  top: -30px;
+  left: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  width: 45px;
+  height: 80px;
+  fill: #7eb101;
 
-    &:hover,
-    &:focus {
-        scale: 1.2;
-    }
+  &:hover,
+  &:focus {
+    scale: 1.2;
+  }
 }
 
 .btn-up__icon {
-    position: relative;
-    top: 20px;
-    left: 0;
-    opacity: 0.7;
+  position: relative;
+  top: 20px;
+  left: 0;
+  opacity: 0.7;
 
-    animation-direction: alternate;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
 
-    @media screen and (min-width: 1280px) {
-        width: 25px;
-        height: 37px;
-}
-
+  @media screen and (min-width: 1280px) {
+    width: 25px;
+    height: 37px;
+  }
 }
