@@ -222,13 +222,17 @@
 }
 
 
- .order__form:valid .order__btn-send {
-   background-color: $default-button-color;
- }
+.order__form:valid .order__btn-send {
+  background-color: $default-button-color;
+}
 
- .order__form:invalid .order__btn-send {
-   border-color: rgba(255, 112, 93, 1);
- }
+.order__input:not(:placeholder-shown):invalid ~ .order__btn-send {
+  border-color: rgba(255, 112, 93, 1);
+}
+
+.order__form:invalid .order__btn-send:active {
+  background-color: red;
+}
 
 
 /*--------------------------------------- HEADER----------------------------------------------------------------*/

@@ -133,38 +133,28 @@
 
           <!-----------------------------------------------------------END foto into form------------------------------------------->
         </div>
-        <label class="order__form-set">
+        <label class="order__form-set" for="name">
           <p class="order__form-name">Name</p>
-          <input
-            class="order__input"
-            type="text"
-            name="Name"
-            placeholder="Your name"
-            maxlength="100"
-            required
-            autofocus
-          />
-          <div class="order__wrap">
-            <svg width="12" height="12">
-              <use href="./images/sprite.svg#icon-warning"></use>
-            </svg>
-            <p class="order__warning">
-              The name must be between 3 and 25 characters
-            </p>
-          </div>
         </label>
-        <label class="order__form-set">
+
+        <input class="order__input" type="text" name="Name" placeholder="Your name" maxlength="100" required autofocus id="name"/>
+
+        <div class="order__wrap">
+          <svg width="12" height="12">
+            <use href="./images/sprite.svg#icon-warning"></use>
+          </svg>
+          <p class="order__warning">
+            The name must be between 3 and 25 characters
+          </p>
+        </div>
+        
+        <label class="order__form-set" for="phone">
           <p class="order__form-name">Phone number</p>
-          <input
-            class="order__input"
-            type="tel"
-            name="Phone_number"
-            placeholder="+38(0_ _) _ _ _   _ _   _ _"
-            pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
-            minlength="10"
-            maxlength="10"
-            required
-          />
+        </label>
+
+        <input class="order__input" type="tel" name="Phone_number" placeholder="+38(0_ _) _ _ _   _ _   _ _"
+          pattern="[0-9]{3}[0-9]{3}[0-9]{4}" minlength="10" maxlength="10" required id="phone"/>
+
           <div class="order__wrap">
             <svg width="12" height="12">
               <use href="./images/sprite.svg#icon-warning"></use>
@@ -173,24 +163,19 @@
               This phone must be in the format 099 000 00 00
             </p>
           </div>
-        </label>
-        <label class="order__form-set">
+        
+        <label class="order__form-set" for="mail">
           <p class="order__form-name">E-mail</p>
-          <input
-            class="order__input"
-            type="email"
-            name="E-mail"
-            placeholder="example@gmail.com"
-            maxlength="100"
-            required
-          />
-          <div class="order__wrap">
-            <svg width="12" height="12">
-              <use href="./images/sprite.svg#icon-warning"></use>
-            </svg>
-            <p class="order__warning">Please enter a valid email address</p>
-          </div>
         </label>
+
+        <input class="order__input" type="email" name="E-mail" placeholder="example@gmail.com" maxlength="100" required id="mail"/>
+        
+        <div class="order__wrap">
+          <svg width="12" height="12">
+            <use href="./images/sprite.svg#icon-warning"></use>
+          </svg>
+          <p class="order__warning">Please enter a valid email address</p>
+        </div>
         <button type="submit" class="order__btn-send">Send</button>
       </form>
     </div>
