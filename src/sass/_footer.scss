@@ -73,6 +73,7 @@
     line-height: 16px;
     color: $text-color;
     position: relative;
+    transition: color .25s cubic-bezier(.4, 0, .2, 1);
     &::after {
       content: '';
       position: absolute;
@@ -214,6 +215,7 @@
       display: block;
       margin-left: auto;
       margin-bottom: 20px;
+      
     }
     &--input {
       width: 100%;
